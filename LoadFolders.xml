@@ -25,5 +25,6 @@
 		<li IfModActive="sbz.neatstoragefridge,sbz.neatstoragefridge_steam">Content/[sbz] Fridge</li>
 		<li IfModActive="xmb.ancienturbanruins.mo,xmb.ancienturbanruins.mo_steam">Content/Ancient urban ruins</li>
 		<li IfModActive="keshash.grenadevariety,keshash.grenadevariety_steam">Content/Grenade Variety for Combat Extended</li>
+		<li IfModActive="oskarpotocki.vanillavehiclesexpanded,oskarpotocki.vanillavehiclesexpanded_steam">Content/Vanilla Vehicles Expanded</li>
 	</v1.6>
 </loadFolders>
