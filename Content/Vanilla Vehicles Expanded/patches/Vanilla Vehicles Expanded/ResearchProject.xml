@@ -7,7 +7,6 @@
         <requirements>
           <li>Thermodynamics</li>
           <li>PhysicsMechanics</li>
-          <li>Calculus</li>
         </requirements>
         <hardRequirement>True</hardRequirement>
       </li>
@@ -20,6 +19,7 @@
         <requirements>
           <li>MechanicalEngineering</li>
           <li>ElectricalEngineering</li>
+          <li>Thermodynamics</li>
         </requirements>
         <hardRequirement>True</hardRequirement>
       </li>
@@ -41,6 +41,7 @@
     <value>
       <li Class="LifeLessons.ResearchProficiencyExtension">
         <requirements>
+          <li>Thermodynamics</li>
           <li>MechanicalEngineering</li>
           <li>Gunsmithing</li>
         </requirements>
