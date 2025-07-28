@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+	<v1.6>
+		<li>/</li>
+		<li IfModActive="adaptive.ideology.storage,adaptive.ideology.storage_steam">Content/Adaptive Ideology Storage</li>
+		<li IfModActive="adaptive.primitivestorage,adaptive.primitivestorage_steam">Content/Adaptive Primitive Storage</li>
+		<li IfModActive="adaptive.simplestorage,adaptive.simplestorage_steam">Content/Adaptive Simple Storage</li>
+		<li IfModActive="adaptive.storage.neolithic,adaptive.storage.neolithic_steam">Content/Adaptive Storage Neolithic Module</li>
+		<li IfModActive="asf.deepstorage,asf.deepstorage_steam">Content/LWM's Adaptive Deep Storage</li>
+		<li IfModActive="ceteam.combatextended,ceteam.combatextended_steam">Content/Combat Extended</li>
+		<li IfModActive="cp.rimmunation.2.clothing,cp.rimmunation.2.clothing_steam">Content/[RH2] Rimmu-Nation² - Clothing</li>
+		<li IfModActive="klvlt.asf.medicinecrate,klvlt.asf.medicinecrate_steam">Content/Medicine Crate (with Adaptive Storage Framework)</li>
+		<li IfModActive="locals.antiques,locals.antiques_steam">Content/Local's CE Antiques I</li>
+		<li IfModActive="locals.antiquesaddon,locals.antiquesaddon_steam">Content/Local's CE Antiques II</li>
+		<li IfModActive="locals.antiquesiii,locals.antiquesiii_steam">Content/Local's CE antiques III</li>
+		<li IfModActive="locals.antiquesiiibloat,locals.antiquesiiibloat_steam">Content/Local's CE antiques III Extra</li>
+		<li IfModActive="locals.lclceguns,locals.lclceguns_steam">Content/Local's CE Guns</li>
+		<li IfModActive="ludeon.rimworld,ludeon.rimworld_steam">Content/Core</li>
+		<li IfModActive="ludeon.rimworld.ideology,ludeon.rimworld.ideology_steam">Content/Ideology</li>
+		<li IfModActive="mersid.backuppowerupdated,mersid.backuppowerupdated_steam">Content/Backup Power (Updated)</li>
+		<li IfModActive="mlie.variousspaceshipchunk,mlie.variousspaceshipchunk_steam">Content/Various Space Ship Chunk (Continued)</li>
+		<li IfModActive="phaneron.basic.storage,phaneron.basic.storage_steam">Content/Phaneron's Basic Storage</li>
+		<li IfModActive="reel.expanded.storage,reel.expanded.storage_steam">Content/Reel's Expanded Storage</li>
+		<li IfModActive="rikiki.miningco.mininghelmet,rikiki.miningco.mininghelmet_steam">Content/MiningCo. MiningHelmet</li>
+		<li IfModActive="sbz.neatstoragefridge,sbz.neatstoragefridge_steam">Content/[sbz] Fridge</li>
+		<li IfModActive="xmb.ancienturbanruins.mo,xmb.ancienturbanruins.mo_steam">Content/Ancient urban ruins</li>
+		<li IfModActive="keshash.grenadevariety,keshash.grenadevariety_steam">Content/Grenade Variety for Combat Extended</li>
+	</v1.6>
+</loadFolders>

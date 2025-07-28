@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="SculptureSmall"]</xpath>
+		<value>
+			<li Class="LifeLessons.BuildingProficiencyExtension">
+				<templateDef>Sculpture</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="SculptureLarge"]</xpath>
+		<value>
+			<li Class="LifeLessons.BuildingProficiencyExtension">
+				<templateDef>Sculpture</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="SculptureGrand"]</xpath>
+		<value>
+			<li Class="LifeLessons.BuildingProficiencyExtension">
+				<templateDef>Sculpture</templateDef>
+				<hardRequirement>False</hardRequirement>
+			</li>
+		</value>
+	</Operation>
+</Patch>
