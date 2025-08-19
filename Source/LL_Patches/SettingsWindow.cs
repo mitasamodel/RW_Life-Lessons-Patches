@@ -19,10 +19,7 @@ namespace LLPatches
 			settings = GetSettings<LLPatchesSettings>();
 		}
 
-		public override string SettingsCategory()
-		{
-			return "Life Lessons: Patches";
-		}
+		public override string SettingsCategory() => "Life Lessons: Patches";
 
 		public override void DoSettingsWindowContents(Rect inRect)
 		{
@@ -30,7 +27,7 @@ namespace LLPatches
 			listing.Begin(inRect);
 
 			//***** CE Ammo Section
-			float paddingSize = 6f;
+			float paddingSize = 12f;
 			float groupHeight = inRect.height - Utils_GUI.resetButtonAreaHeight;
 			Rect groupRect = listing.GetRect(groupHeight);            //Area
 
@@ -62,7 +59,7 @@ namespace LLPatches
 					"Recommended: disabled. If patch already exists it will be removed and replaced by this automatic patch.\n\n" +
 					"Should be used only for debug actions.\n" +
 					"It is however SAFE, no files will be overwritten.");
-				foreach (var key in settings.Values.Keys.ToList())
+				foreach (var key in settings.Values.Keys.ToList().OrderByDescending(k => k.Length))
 					settings.Values[key] = LabeledTextField(groupListing, key, settings.Values[key]);
 			}
 
@@ -82,7 +79,7 @@ namespace LLPatches
 				}
 			groupListing.End();
 
-			groupRect.yMax = groupListing.MaxColumnHeightSeen + paddingSize;
+			groupRect.yMax = groupListing.MaxColumnHeightSeen + paddingSize * 2;
 			Utils_GUI.DrawBox(groupRect, Color.grey, 1);
 			listing.End();
 

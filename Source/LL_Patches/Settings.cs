@@ -36,6 +36,11 @@ namespace LLPatches
 			{ "Charged_AP", "RecipeAmmoChargedC2" },
 			{ "Charged_Slug", "RecipeAmmoChargedC2" },
 			{ "Charged_Ion", "RecipeAmmoChargedC1" },
+			{ "Arrow_Stone", "RecipeAmmoStoneArrowC1" },
+			{ "Arrow_Steel", "RecipeAmmoMetalArrowC1" },
+			{ "Arrow_Plasteel", "RecipeAmmoMetalArrowC2" },
+			{ "Arrow_Venom" , "RecipeAmmoVenomArrowC1" },
+			{ "Arrow_Flame", "RecipeAmmoFlameArrowC1" },
 		};
 
 		public bool patchUnpatchedCEAmmo = patchCEAmmo_Default;
