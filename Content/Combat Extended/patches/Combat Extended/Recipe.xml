@@ -1,6 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_25x40mmGrenade_Buck"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>RecipeAmmoC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_ForsakensArrows"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PrinciplesWoodworking</li>
+          <li>MetalWorking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.7</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
     <xpath>Defs/RecipeDef[defName="Make_FSXDrugLab"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
@@ -2324,7 +2355,43 @@
     <xpath>Defs/RecipeDef[defName="MakeAmmo_Arrow_Stone"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
-        <templateDef>RecipeAmmoArrowC1</templateDef>
+        <templateDef>RecipeAmmoStoneArrowC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_Arrow_Steel"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>RecipeAmmoMetalArrowC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_Arrow_Plasteel"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>RecipeAmmoMetalArrowC2</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_Arrow_Venom"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>RecipeAmmoVenomArrowC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_Arrow_Flame"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>RecipeAmmoFlameArrowC1</templateDef>
         <hardRequirement>False</hardRequirement>
       </li>
     </value>
@@ -2333,7 +2400,43 @@
     <xpath>Defs/RecipeDef[defName="MakeAmmo_GreatArrow_Stone"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
-        <templateDef>RecipeAmmoArrowC1</templateDef>
+        <templateDef>RecipeAmmoStoneArrowC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_GreatArrow_Steel"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>RecipeAmmoMetalArrowC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_GreatArrow_Plasteel"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>RecipeAmmoMetalArrowC2</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_GreatArrow_Venom"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>RecipeAmmoVenomArrowC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_GreatArrow_Flame"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>RecipeAmmoFlameArrowC1</templateDef>
         <hardRequirement>False</hardRequirement>
       </li>
     </value>
