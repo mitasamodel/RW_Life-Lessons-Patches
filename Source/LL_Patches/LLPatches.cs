@@ -10,24 +10,23 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
+using static LLPatches.Logger;
+
 namespace LLPatches
 {
 	[StaticConstructorOnStartup]
 	public static class LLPatches
 	{
-		static readonly string logFile = @Environment.CurrentDirectory + @"\Mods\LLPatches.log";
-
 		static LLPatches()
 		{
-			if (LLPatchesMod.settings.patchCEAmmo_Logging || LLPatchesMod.settings.patchCEAmmo_LogUnpatched)
-				File.WriteAllText(logFile, "[LLPatch] Debug start\n");    //create/rewrite file
+			Logger.Init();
 
 			//CE Ammos have their separated recipes instead of auto-generated for items
 			if (LLPatchesMod.settings.patchUnpatchedCEAmmo)
-				ProceedCEAmmoRecipes();
+				ProcessCEAmmoRecipes();
 		}
 
-		public static void ProceedCEAmmoRecipes()
+		public static void ProcessCEAmmoRecipes()
 		{
 			if (LLPatchesMod.settings.Values == null)
 			{
@@ -180,16 +179,6 @@ namespace LLPatches
 		/// Debug logging
 		/// </summary>
 		/// <param name="msg"></param>
-		public static void Log(string msg)
-		{
-				File.AppendAllText(logFile, msg + "\n");
-		}
-
-		public static void Log_Error(string msg)
-		{
-			Verse.Log.Error($"[Life Lessons: Patches] {msg}");
-			if (LLPatchesMod.settings.patchCEAmmo_Logging)
-				File.AppendAllText(logFile, msg + "\n");
-		}
+		
 	}
 }

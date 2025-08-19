@@ -69,8 +69,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LLPatches.cs" />
+    <Compile Include="Logger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
+    <Compile Include="WidgetsHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll" />
