@@ -127,7 +127,7 @@ namespace LLPatches
 				hardRequirement = false
 			};
 			if (newExtension.templateDef == null)
-				Log_Error($"[Life Lessons: Patches] Cannot find template [{templateName}]");
+				Log_Error($"Cannot find template [{templateName}]");
 			else
 			{
 				if (recipe.modExtensions == null)
