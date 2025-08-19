@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VFET_Chunk"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PrinciplesStoneworking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Poor</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+</Patch>

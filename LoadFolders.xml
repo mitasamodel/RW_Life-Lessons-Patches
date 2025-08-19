@@ -23,6 +23,7 @@
 		<li IfModActive="mersid.backuppowerupdated,mersid.backuppowerupdated_steam">Content/Backup Power (Updated)</li>
 		<li IfModActive="mlie.variousspaceshipchunk,mlie.variousspaceshipchunk_steam">Content/Various Space Ship Chunk (Continued)</li>
 		<li IfModActive="oskarpotocki.vanillavehiclesexpanded,oskarpotocki.vanillavehiclesexpanded_steam">Content/Vanilla Vehicles Expanded</li>
+		<li IfModActive="oskarpotocki.vfe.tribals,oskarpotocki.vfe.tribals_steam">Content/Vanilla Factions Expanded - Tribals</li>
 		<li IfModActive="phaneron.basic.storage,phaneron.basic.storage_steam">Content/Phaneron's Basic Storage</li>
 		<li IfModActive="reel.expanded.storage,reel.expanded.storage_steam">Content/Reel's Expanded Storage</li>
 		<li IfModActive="rikiki.miningco.mininghelmet,rikiki.miningco.mininghelmet_steam">Content/MiningCo. MiningHelmet</li>
