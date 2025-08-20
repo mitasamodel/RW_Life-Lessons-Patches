@@ -96,7 +96,7 @@ namespace LLPatches
 			// Output summary if any recipes were unmatched
 			if (noTemplateRecipes.Count > 0 && (LLPatchesMod.settings.patchCEAmmo_Logging || LLPatchesMod.settings.patchCEAmmo_LogUnpatched))
 			{
-				Log("The following ammo recipes had no matching template:");
+				Log("Recipes with no matching template:");
 				foreach (string recipeName in noTemplateRecipes)
 					Log($"\t- {recipeName}");
 			}

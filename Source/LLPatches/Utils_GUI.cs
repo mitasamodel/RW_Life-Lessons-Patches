@@ -33,5 +33,16 @@ namespace LLPatches
 			Utils_GUI.GapLine(inRect.x, inRect.yMax - buttonHeigt - gapHeight / 2f, inRect.width);
 			return Widgets.ButtonText(new Rect(inRect.x, inRect.yMax - buttonHeigt, inRect.width, buttonHeigt), label);
 		}
+
+		public static string LabeledTextField(Listing_Standard listing, string label, string value, float labelWidth = 120f, float gap = 6f)
+		{
+			Rect row = listing.GetRect(22f);
+
+			Rect labelRect = new Rect(row.x, row.y, labelWidth, row.height);
+			Rect fieldRect = new Rect(row.x + labelWidth + gap, row.y, row.width - labelWidth - gap, row.height);
+
+			Widgets.Label(labelRect, label);
+			return Widgets.TextField(fieldRect, value ?? "");
+		}
 	}
 }

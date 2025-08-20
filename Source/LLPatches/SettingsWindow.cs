@@ -6,7 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
+using Verse.Noise;
 using Verse.Sound;
+using LudeonTK;
 
 namespace LLPatches
 {
@@ -14,14 +16,67 @@ namespace LLPatches
 	{
 		public static LLPatchesSettings settings;
 
+		// Tabs
+		private enum SettingsTab { Nothing, CEAmmoMain, CEAmmoTemplates };
+		private SettingsTab _currentTab;
+		private readonly List<TabRecord> _tabs;
+
+		[TweakValue("0_SET", 0f, 50f)]
+		static float tabShift = 25f;
+		[TweakValue("0_SET", 0f, 50f)]
+		static float contractBy = 10f;
+
+		private bool _manualPrev;
+
 		public LLPatchesMod(ModContentPack content) : base(content)
 		{
 			settings = GetSettings<LLPatchesSettings>();
+			_tabs = new List<TabRecord>();
+			_manualPrev = settings.patchCEAmmo_Manual;
+
+			if (ModsConfig.IsActive("CETeam.CombatExtended"))
+			{
+				_tabs.Add(new TabRecord("CE Ammo", () => _currentTab = SettingsTab.CEAmmoMain, () => _currentTab == SettingsTab.CEAmmoMain));
+				_currentTab = SettingsTab.CEAmmoMain;
+				if (settings.patchCEAmmo_Manual)
+					_tabs.Insert(1, new TabRecord("CE Ammo Templates", () => _currentTab = SettingsTab.CEAmmoTemplates, () => _currentTab == SettingsTab.CEAmmoTemplates));
+			}
 		}
 
 		public override string SettingsCategory() => "Life Lessons: Patches";
 
 		public override void DoSettingsWindowContents(Rect inRect)
+		{
+			inRect.y += tabShift;
+			inRect.height -= tabShift;
+			Widgets.DrawMenuSection(inRect);
+			TabDrawer.DrawTabs(inRect, _tabs);
+
+			Rect contentRect = inRect.ContractedBy(contractBy);
+			switch (_currentTab)
+			{
+				case SettingsTab.CEAmmoMain:
+					DrawCEAmmoMainTab(contentRect);
+					break;
+				case SettingsTab.CEAmmoTemplates:
+					DrawCEAmmoTemplatesTab(contentRect);
+					break;
+				default:
+					Widgets.Label(inRect, "Nothing is here for this mod combinations...");
+					break;
+			}
+		}
+
+		private void DrawCEAmmoTemplatesTab(Rect inRect)
+		{
+			Listing_Standard listing = new Listing_Standard();
+			listing.Begin(inRect);
+			foreach (var key in settings.Values.Keys.ToList().OrderByDescending(k => k.Length))
+				settings.Values[key] = Utils_GUI.LabeledTextField(listing, key, settings.Values[key]);
+			listing.End();
+		}
+
+		private void DrawCEAmmoMainTab(Rect inRect)
 		{
 			Listing_Standard listing = new Listing_Standard();
 			listing.Begin(inRect);
@@ -43,28 +98,36 @@ namespace LLPatches
 			groupListing.CheckboxLabeled("Log ammo without template", ref settings.patchCEAmmo_LogUnpatched,
 				"Outputs the list of CE ammo, for which no template has been found.\n\n" +
 				"Location: " + @Environment.CurrentDirectory + @"\Mods\LLPatches.log");
-			bool wasManual = settings.patchCEAmmo_Manual;
 			groupListing.CheckboxLabeled("Advanced", ref settings.patchCEAmmo_Manual, "Check the templates or set them manually.\n" +
 				"Disabling this option will set values to their DEFAULTs.\n\n" +
 				"Default templates location:\nContent\\Combat Extended\\Defs\\Combat Extended\\Templates_Recipies_Ammo.xml."
 				);
-			// Changed from true to false
-			if (wasManual && !settings.patchCEAmmo_Manual)
-				settings.CEAmmoToDefaults();
 
-			// Advanced: set templates manually or check them
-			if (settings.patchCEAmmo_Manual)
+			// Setting changed
+			if (_manualPrev != settings.patchCEAmmo_Manual)
 			{
-				groupListing.CheckboxLabeled("Force re-patch all CE ammo", ref settings.patchCEAmmo_ForceRemoveExisting,
-					"Recommended: disabled. If patch already exists it will be removed and replaced by this automatic patch.\n\n" +
-					"Should be used only for debug actions.\n" +
-					"It is however SAFE, no files will be overwritten.");
-				foreach (var key in settings.Values.Keys.ToList().OrderByDescending(k => k.Length))
-					settings.Values[key] = LabeledTextField(groupListing, key, settings.Values[key]);
+				_manualPrev = settings.patchCEAmmo_Manual;
+				if (!settings.patchCEAmmo_Manual)
+				{
+					settings.CEAmmoToDefaults();
+					_tabs.RemoveAll(t => t.label.Equals("CE Ammo Templates"));
+				}
+				else
+				{
+					_tabs.Insert(1, new TabRecord("CE Ammo Templates", () => _currentTab = SettingsTab.CEAmmoTemplates, () => _currentTab == SettingsTab.CEAmmoTemplates));
+				}
 			}
 
 			groupListing.CheckboxLabeled("Verbose logging", ref settings.patchCEAmmo_Logging, "Log all operations to file.\n\n" +
 				"Location:" + @Environment.CurrentDirectory + @"\Mods\LLPatches.log");
+
+			if (settings.patchCEAmmo_Manual)
+			{
+				groupListing.CheckboxLabeled("Force re-patch all CE ammo", ref settings.patchCEAmmo_ForceRemoveExisting,
+						"Recommended: disabled. If patch already exists it will be removed and replaced by this automatic patch.\n\n" +
+						"Should be used only for debug actions.\n" +
+						"It is however SAFE, no files will be overwritten.");
+			}
 
 			if (groupListing.ButtonText("Patch CE ammo now"))
 				if (settings.patchUnpatchedCEAmmo)
@@ -86,18 +149,6 @@ namespace LLPatches
 			// Reset to defaults button
 			if (Utils_GUI.ResetButton(inRect, "Reset to defaults"))
 				settings.ResetToDefaults();
-		}
-
-
-		private string LabeledTextField(Listing_Standard listing, string label, string value, float labelWidth = 120f, float gap = 6f)
-		{
-			Rect row = listing.GetRect(22f);
-
-			Rect labelRect = new Rect(row.x, row.y, labelWidth, row.height);
-			Rect fieldRect = new Rect(row.x + labelWidth + gap, row.y, row.width - labelWidth - gap, row.height);
-
-			Widgets.Label(labelRect, label);
-			return Widgets.TextField(fieldRect, value ?? "");
 		}
 	}
 }
