@@ -20,6 +20,7 @@
 		<li IfModActive="locals.lclceguns,locals.lclceguns_steam">Content/Local's CE Guns</li>
 		<li IfModActive="ludeon.rimworld,ludeon.rimworld_steam">Content/Core</li>
 		<li IfModActive="ludeon.rimworld.ideology,ludeon.rimworld.ideology_steam">Content/Ideology</li>
+		<li IfModActive="ludeon.rimworld.odyssey,ludeon.rimworld.odyssey_steam">Content/Odyssey</li>
 		<li IfModActive="mersid.backuppowerupdated,mersid.backuppowerupdated_steam">Content/Backup Power (Updated)</li>
 		<li IfModActive="mlie.variousspaceshipchunk,mlie.variousspaceshipchunk_steam">Content/Various Space Ship Chunk (Continued)</li>
 		<li IfModActive="oskarpotocki.vanillavehiclesexpanded,oskarpotocki.vanillavehiclesexpanded_steam">Content/Vanilla Vehicles Expanded</li>
