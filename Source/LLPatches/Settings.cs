@@ -67,6 +67,12 @@ namespace LLPatches
 				Values[key] = value;
 			}
 		}
+
+		public void ResetCEAmmoTemplates()
+		{
+
+		}
+
 		public void ResetToDefaults()
 		{
 			patchUnpatchedCEAmmo = patchCEAmmo_Default;
@@ -74,7 +80,7 @@ namespace LLPatches
 			patchCEAmmo_ForceRemoveExisting = patchCEAmmo_ForceRemoveExisting_Default;
 			patchCEAmmo_Logging = patchCEAmmo_Logging_Default;
 			patchCEAmmo_LogUnpatched = patchCEAmmo_LogUnpatched_Default;
-			Values = new Dictionary<string, string>(CEAmmoDefaultValues);
+			//Values = new Dictionary<string, string>(CEAmmoDefaultValues);
 		}
 
 		/// <summary>
