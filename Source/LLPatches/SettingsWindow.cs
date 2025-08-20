@@ -16,9 +16,9 @@ namespace LLPatches
 	{
 		public static LLPatchesSettings settings;
 
-		public enum SettingsTab { Nothing, CEAmmoMain, CEAmmoTemplates, dummy1, dummy2 };		// Types of tabs to distinguish.
+		public enum SettingsTab { Nothing, CEAmmoMain, CEAmmoTemplates, dummy1, dummy2 };       // Types of tabs to distinguish.
 		private SettingsTab _currentTab;
-		private readonly Dictionary<SettingsTab, ITabView> _tabInstances;           // Class for each tab. They must realize ITabView interface.
+		private readonly Dictionary<SettingsTab, ITabView> _tabInstances;           // Class for each tab. They must implement ITabView interface.
 		private readonly List<TabRecord> _tabs = new List<TabRecord>();             // List for RW TabDrawer.
 		static readonly float tabShift = 25f;
 		static readonly float contractBy = 12f;
@@ -37,7 +37,6 @@ namespace LLPatches
 				{ SettingsTab.dummy2, new dummyTab2(this) },
 			};
 			ResetTabs();
-			_currentTab = SettingsTab.CEAmmoMain;
 		}
 
 		public override string SettingsCategory() => "Life Lessons: Patches";
@@ -54,11 +53,16 @@ namespace LLPatches
 			Rect contentRect = inRect.ContractedBy(contractBy);
 			if (_tabInstances.TryGetValue(_currentTab, out ITabView instance))
 			{
-				if (instance.Enabled())
-					instance.Draw(contentRect);
+				if (!instance.Enabled())
+				{
+					ResetTabs();
+					Verse.Log.Warning($"[{LLPatches.modName}: Pre Draw()] Unexpected _currentTab value. Resetting tabs.");
+					return;
+				}
+				instance.Draw(contentRect);
 			}
 			else
-				Widgets.Label(inRect, "Nothing is here for this mod combinations...");
+				Widgets.Label(contentRect, "Nothing is here for this mods combination...");
 		}
 
 		/// <summary>
@@ -67,10 +71,29 @@ namespace LLPatches
 		public void ResetTabs()
 		{
 			_tabs.Clear();
-			foreach (var kv in _tabInstances)
+			ITabView instance;
+
+			// Repopulate the tabs list.
+			// Iteration through Dictionary is not guaranteed to be in the same order as in initialization. Use enum instead.
+			foreach (SettingsTab key in Enum.GetValues(typeof(SettingsTab)))
 			{
-				if (kv.Value.Enabled())
-					_tabs.Add(new TabRecord(kv.Value.GetLabel(), () => _currentTab = kv.Key, () => _currentTab == kv.Key));
+				if (_tabInstances.TryGetValue(key, out instance) && instance.Enabled())
+				{
+					_tabs.Add(new TabRecord(instance.GetLabel(), () => _currentTab = key, () => _currentTab == key));
+				}
+			}
+
+			// If current tab is disabled.
+			if (!_tabInstances.TryGetValue(_currentTab, out instance) || !instance.Enabled())
+			{
+				if (_tabs.Count > 0)
+				{
+					// Select first enabled tab.
+					var firstEnabledKey = _tabInstances.First(kv => kv.Value.Enabled()).Key;
+					_currentTab = firstEnabledKey;
+				}
+				else
+					_currentTab = SettingsTab.Nothing;
 			}
 		}
 	}

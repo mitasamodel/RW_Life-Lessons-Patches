@@ -17,6 +17,8 @@ namespace LLPatches
 	[StaticConstructorOnStartup]
 	public static class LLPatches
 	{
+		internal const string modName = "LLPatches";
+
 		static LLPatches()
 		{
 			Logger.Init();
