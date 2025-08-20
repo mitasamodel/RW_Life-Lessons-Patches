@@ -24,7 +24,7 @@ namespace LLPatches
 		[TweakValue("0_SET", 0f, 50f)]
 		static float tabShift = 25f;
 		[TweakValue("0_SET", 0f, 50f)]
-		static float contractBy = 10f;
+		static float contractBy = 12f;
 
 		private bool _manualPrev;
 
@@ -79,26 +79,19 @@ namespace LLPatches
 		private void DrawCEAmmoMainTab(Rect inRect)
 		{
 			Listing_Standard listing = new Listing_Standard();
-			listing.Begin(inRect);
-
-			//***** CE Ammo Section
-			float paddingSize = 12f;
-			float groupHeight = inRect.height - Utils_GUI.resetButtonAreaHeight;
-			Rect groupRect = listing.GetRect(groupHeight);            //Area
-
-			Rect innerRect = groupRect.ContractedBy(paddingSize);     //Padding from inside
-			Listing_Standard groupListing = new Listing_Standard();
-			groupListing.Begin(innerRect);
-			groupListing.LabelCentered("Combat Extended Ammo Patch Options");
-			groupListing.CheckboxLabeled("Patch unpatched CE ammo", ref settings.patchUnpatchedCEAmmo,
+			Rect listingRect = inRect;
+			listingRect.height -= Utils_GUI.resetButtonAreaHeight;
+			listing.Begin(listingRect);
+			listing.LabelCentered("Combat Extended Ammo Patch Options");
+			listing.CheckboxLabeled("Patch unpatched CE ammo", ref settings.patchUnpatchedCEAmmo,
 				"Automatically apply proficiency requirements for crafting CE ammo if it is has none.\n\n" +
 				"Patch applied during startup or by manually clicking the button below.\n" +
 				"To disable it, uncheck the option and restart the game.\n\n" +
 				"Patch does NOT overwrite any files, it is safe to apply it, test it and then disable if not needed.");
-			groupListing.CheckboxLabeled("Log ammo without template", ref settings.patchCEAmmo_LogUnpatched,
+			listing.CheckboxLabeled("Log ammo without template", ref settings.patchCEAmmo_LogUnpatched,
 				"Outputs the list of CE ammo, for which no template has been found.\n\n" +
 				"Location: " + @Environment.CurrentDirectory + @"\Mods\LLPatches.log");
-			groupListing.CheckboxLabeled("Advanced", ref settings.patchCEAmmo_Manual, "Check the templates or set them manually.\n" +
+			listing.CheckboxLabeled("Advanced", ref settings.patchCEAmmo_Manual, "Check the templates or set them manually.\n" +
 				"Disabling this option will set values to their DEFAULTs.\n\n" +
 				"Default templates location:\nContent\\Combat Extended\\Defs\\Combat Extended\\Templates_Recipies_Ammo.xml."
 				);
@@ -118,18 +111,18 @@ namespace LLPatches
 				}
 			}
 
-			groupListing.CheckboxLabeled("Verbose logging", ref settings.patchCEAmmo_Logging, "Log all operations to file.\n\n" +
+			listing.CheckboxLabeled("Verbose logging", ref settings.patchCEAmmo_Logging, "Log all operations to file.\n\n" +
 				"Location:" + @Environment.CurrentDirectory + @"\Mods\LLPatches.log");
 
 			if (settings.patchCEAmmo_Manual)
 			{
-				groupListing.CheckboxLabeled("Force re-patch all CE ammo", ref settings.patchCEAmmo_ForceRemoveExisting,
+				listing.CheckboxLabeled("Force re-patch all CE ammo", ref settings.patchCEAmmo_ForceRemoveExisting,
 						"Recommended: disabled. If patch already exists it will be removed and replaced by this automatic patch.\n\n" +
 						"Should be used only for debug actions.\n" +
 						"It is however SAFE, no files will be overwritten.");
 			}
 
-			if (groupListing.ButtonText("Patch CE ammo now"))
+			if (listing.ButtonText("Patch CE ammo now"))
 				if (settings.patchUnpatchedCEAmmo)
 				{
 					LLPatches.ProcessCEAmmoRecipes();
@@ -140,10 +133,7 @@ namespace LLPatches
 					// Show a notification
 					Messages.Message("Patch for CE ammo applied!", MessageTypeDefOf.PositiveEvent);
 				}
-			groupListing.End();
 
-			groupRect.yMax = groupListing.MaxColumnHeightSeen + paddingSize * 2;
-			Utils_GUI.DrawBox(groupRect, Color.grey, 1);
 			listing.End();
 
 			// Reset to defaults button
