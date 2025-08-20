@@ -39,7 +39,7 @@ namespace LLPatches
 				_tabs.Add(new TabRecord("CE Ammo", () => _currentTab = SettingsTab.CEAmmoMain, () => _currentTab == SettingsTab.CEAmmoMain));
 				_currentTab = SettingsTab.CEAmmoMain;
 				if (settings.patchCEAmmo_Manual)
-					_tabs.Insert(1, new TabRecord("CE Ammo Templates", () => _currentTab = SettingsTab.CEAmmoTemplates, () => _currentTab == SettingsTab.CEAmmoTemplates));
+					_tabs.Insert((int)(SettingsTab.CEAmmoTemplates - 1), new TabRecord("CE Ammo Templates", () => _currentTab = SettingsTab.CEAmmoTemplates, () => _currentTab == SettingsTab.CEAmmoTemplates));
 			}
 		}
 
@@ -107,7 +107,7 @@ namespace LLPatches
 				}
 				else
 				{
-					_tabs.Insert(1, new TabRecord("CE Ammo Templates", () => _currentTab = SettingsTab.CEAmmoTemplates, () => _currentTab == SettingsTab.CEAmmoTemplates));
+					_tabs.Insert((int)(SettingsTab.CEAmmoTemplates - 1), new TabRecord("CE Ammo Templates", () => _currentTab = SettingsTab.CEAmmoTemplates, () => _currentTab == SettingsTab.CEAmmoTemplates));
 				}
 			}
 
