@@ -8,6 +8,7 @@ using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 using Verse;
 
 using static LLPatches.Logger;
@@ -18,6 +19,8 @@ namespace LLPatches
 	public static class LLPatches
 	{
 		internal const string modName = "LLPatches";
+		public static Texture2D IconRemove = ContentFinder<Texture2D>.Get("LLPatches/Remove", true);
+		public static Texture2D IconRestore = ContentFinder<Texture2D>.Get("ui/widgets/rotleft", true);
 
 		static LLPatches()
 		{

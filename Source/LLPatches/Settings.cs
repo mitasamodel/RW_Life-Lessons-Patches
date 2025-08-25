@@ -164,9 +164,43 @@ namespace LLPatches
 		/// Goes through list of templates and replaces known suffixes to defaults.
 		/// Also adds default suffixes if not found.
 		/// </summary>
-		public void ResetCEAmmoTemplates()
+		public void RestoreCEAmmoTemplates()
 		{
-			//TODO
+			CEAmmoTemplates ??= new List<CEAmmoTemplate>();
+
+			// Lookup dictionary.
+			var defDict = CEAmmoTemplatesDefault
+				.ToDictionary(t => t.Prefix + t.Suffix, t => t.Template, StringComparer.Ordinal);
+
+			// Reset existing items.
+			for (int i = 0; i < CEAmmoTemplates.Count; i++)
+			{
+				var current = CEAmmoTemplates[i];
+				if (defDict.TryGetValue(current.Prefix + current.Suffix, out var defTemp))
+				{
+					current.Template = defTemp;
+					current.Enable();
+				}
+			}
+
+			// Check for missing items.
+			var existed = new HashSet<string>(CEAmmoTemplates.Select(t => t.Prefix + t.Suffix), StringComparer.Ordinal);
+			foreach (var defTemplate in CEAmmoTemplatesDefault)
+			{
+				if (!existed.Contains(defTemplate.Prefix + defTemplate.Suffix))
+				{
+					CEAmmoTemplates.Add(new CEAmmoTemplate(defTemplate.Prefix, defTemplate.Suffix, defTemplate.Template));
+				}
+			}
+		}
+
+		public void RestoreCEAmmoTemplate(CEAmmoTemplate template)
+		{
+			// Check against default settings.
+			foreach (var defTemplate in CEAmmoTemplatesDefault)
+			{
+
+			}
 		}
 
 		public void ResetToDefaults()
@@ -190,34 +224,6 @@ namespace LLPatches
 			//	// TODO: Ignore if the key does not exist in defaults.
 			//	Values = new Dictionary<string, string>(CEAmmoDefaultValues);
 			//}
-		}
-
-		/// <summary>
-		/// Compare both dictionaries with templates.
-		/// Prepare to allow to add new templates from the settings window.
-		/// </summary>
-		/// <param name="current"></param>
-		/// <param name="defaults"></param>
-		/// <returns></returns>
-		private static bool MatchesDefaults(
-			IReadOnlyDictionary<string, string> current,
-			IReadOnlyDictionary<string, string> defaults)
-		{
-			// Same instance (will not happen)
-			//if (ReferenceEquals(current, defaults)) return true;
-
-			// If Default has more keys than current
-			if (current.Count < defaults.Count) return false;
-
-			foreach (var kv in defaults)
-			{
-				// Default has a key that is not in current
-				if (!current.TryGetValue(kv.Key, out var v)) return false;
-
-				// Default value does not match current value
-				if (!string.Equals(v, kv.Value)) return false;
-			}
-			return true;
 		}
 	}
 }

@@ -38,13 +38,20 @@ namespace LLPatches
 		public bool IsActive => _active;
 
 		public CEAmmoTemplate() { }     //Scribe needs a constructor without any parameters.
-		public CEAmmoTemplate(string suffix, string template)
+		public CEAmmoTemplate(string suffix, string template) : this(null, suffix, template) { }
+		public CEAmmoTemplate(string prefix, string suffix, string template)
 		{
+			Prefix = prefix;
 			Suffix = suffix;
 			Template = template;
 			this.Enable();
 		}
 
+		public void SwitchEnable()
+		{
+			if (IsActive) Disable();
+			else Enable();
+		}
 		public void Disable() => _active = false;
 		public void Enable() => _active = true;
 
