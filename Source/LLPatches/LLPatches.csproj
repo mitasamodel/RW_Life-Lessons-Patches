@@ -9,6 +9,7 @@
     <RootNamespace>LLPatches</RootNamespace>
     <AssemblyName>LLPatches</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+	<LangVersion>8.0</LangVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -71,6 +72,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CEAmmoTemplate.cs" />
     <Compile Include="dummyTab2.cs" />
     <Compile Include="dummyTab.cs" />
     <Compile Include="ITabHost.cs" />

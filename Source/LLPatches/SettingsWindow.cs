@@ -15,6 +15,7 @@ namespace LLPatches
 	public class LLPatchesMod : Mod, ITabHost
 	{
 		public static LLPatchesSettings settings;
+		internal static bool forceRewriteSettings = false;
 
 		public enum SettingsTab { Nothing, CEAmmoMain, CEAmmoTemplates, dummy1, dummy2 };       // Types of tabs to distinguish.
 		private SettingsTab _currentTab;
@@ -33,8 +34,8 @@ namespace LLPatches
 			{
 				{ SettingsTab.CEAmmoMain, new TabContent_CEAmmoMain(this) },
 				{ SettingsTab.CEAmmoTemplates, new TabContent_CEAmmoTemplates(this) },
-				{ SettingsTab.dummy1, new dummyTab(this) },
-				{ SettingsTab.dummy2, new dummyTab2(this) },
+				//{ SettingsTab.dummy1, new dummyTab(this) },
+				//{ SettingsTab.dummy2, new dummyTab2(this) },
 			};
 			ResetTabs();
 		}

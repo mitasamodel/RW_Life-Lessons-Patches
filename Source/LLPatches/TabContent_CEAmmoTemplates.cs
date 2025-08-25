@@ -28,11 +28,11 @@ namespace LLPatches
 			//	LLPatchesMod.settings.ResetCEAmmoTemplates();
 
 			//Old
-			Listing_Standard listing = new Listing_Standard();
-			listing.Begin(inRect);
-			foreach (var key in LLPatchesMod.settings.Values.Keys.ToList().OrderByDescending(k => k.Length))
-				LLPatchesMod.settings.Values[key] = Utils_GUI.LabeledTextField(listing, key, LLPatchesMod.settings.Values[key]);
-			listing.End();
+			//Listing_Standard listing = new Listing_Standard();
+			//listing.Begin(inRect);
+			//foreach (var key in LLPatchesMod.settings.Values.Keys.ToList().OrderByDescending(k => k.Length))
+			//	LLPatchesMod.settings.Values[key] = Utils_GUI.LabeledTextField(listing, key, LLPatchesMod.settings.Values[key]);
+			//listing.End();
 		}
 
 		public bool Enabled() => ModsConfig.IsActive("CETeam.CombatExtended") && LLPatchesMod.settings.patchCEAmmo_Manual;
