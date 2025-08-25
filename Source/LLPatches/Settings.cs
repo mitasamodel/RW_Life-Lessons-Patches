@@ -157,11 +157,16 @@ namespace LLPatches
 					CEAmmoTemplates.Add(new CEAmmoTemplate(suffix, template));
 				}
 			}
+			_legacyDict = null;
 		}
 
+		/// <summary>
+		/// Goes through list of templates and replaces known suffixes to defaults.
+		/// Also adds default suffixes if not found.
+		/// </summary>
 		public void ResetCEAmmoTemplates()
 		{
-
+			//TODO
 		}
 
 		public void ResetToDefaults()
