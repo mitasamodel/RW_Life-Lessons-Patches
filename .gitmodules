@@ -1,3 +1,5 @@
 [submodule "Source/RW_Utils"]
 	path = Source/RW_Utils
 	url = https://github.com/mitasamodel/RW_Utils.git
+	branch = master
+	
