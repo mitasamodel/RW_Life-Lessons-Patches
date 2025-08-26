@@ -75,6 +75,20 @@ namespace LLPatches
 				if (LLPatchesMod.settings.patchCEAmmo_Logging)
 					Log($"Recipe: {recipe.defName}. Ammo: {recipe.products[0].thingDef?.defName}");
 
+				// Recipe already has profeciency defined.
+				if (ExtensionExist(recipe))
+				{
+					// Force re-patch.
+					if (LLPatchesMod.settings.patchCEAmmo_ForceRemoveExisting)
+						RemoveExistingExtension(recipe);
+					else
+					{
+						if (LLPatchesMod.settings.patchCEAmmo_Logging)
+							Log($"\tBillProficiencyExtension already exists. Skipping");
+						continue;
+					}
+				}
+
 				string templateName = null;
 				foreach (CEAmmoTemplate template in templates)
 				{
@@ -120,17 +134,6 @@ namespace LLPatches
 					noTemplateRecipes.Add(recipe.defName);
 				else
 				{
-					if (ExtensionExist(recipe))
-					{
-						if (LLPatchesMod.settings.patchCEAmmo_ForceRemoveExisting)
-							RemoveExistingExtension(recipe);
-						else
-						{
-							if (LLPatchesMod.settings.patchCEAmmo_Logging)
-								Log($"\tBillProficiencyExtension already exists. Skipping");
-							continue;
-						}
-					}
 					if (!recipe.AddTemplate(templateName))
 					{
 						Verse.Log.WarningOnce($"[Life Lessons: Patches] Some CE Ammo templates have not been found. Enable and check log.", errorOnceKey);
