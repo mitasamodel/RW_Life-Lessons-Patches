@@ -147,45 +147,6 @@ namespace LLPatches
 		}
 
 		/// <summary>
-		/// Gets all CE ammo recipes which don't have "recipeMaker" -> Non-auto-generated recipes. For auto-generated recipes the "item" should be modified instead.
-		/// </summary>
-		/// <returns>List of non-auto-generated recipes' defs.</returns>
-		private static IEnumerable<RecipeDef> GetAllAmmoRecipes()
-		{
-			var ammoRecipesDefs = DefDatabase<RecipeDef>.AllDefsListForReading
-				.Where(recipe => recipe.products
-					.Any(prod =>
-						(IsCEAmmo(prod.thingDef) &&
-						prod.thingDef.recipeMaker == null)      //non-auto-generated recipe
-					)
-				);
-			return ammoRecipesDefs;
-		}
-
-		/// <summary>
-		/// Checks if the "thing" is an CE-ammo
-		/// </summary>
-		/// <param name="thing"></param>
-		/// <returns></returns>
-		public static bool IsCEAmmo(ThingDef thing)
-		{
-			if (thing == null)
-				return false;
-
-			//<thingClass>CombatExtended.AmmoThing</thingClass>
-			if (thing.thingClass?.FullName == "CombatExtended.AmmoThing")
-				return true;
-
-			//<tradeTags>
-			//	<li>CE_Ammo</li>
-			//</tradeTags>
-			if (thing.tradeTags?.Contains("CE_Ammo") ?? false)
-				return true;
-
-			return false;
-		}
-
-		/// <summary>
 		/// Debug logging
 		/// </summary>
 		/// <param name="msg"></param>

@@ -32,12 +32,25 @@ namespace LLPatches
 			File.AppendAllText(logFile, msg + "\n");
 		}
 
-		public static void Log_Error(string msg)
+		public static void Log_Error(string str)
 		{
+			Verse.Log.Error($"[Life Lessons: Patches] {str}");
+#if DEBUG
 			if (!_init) Init();
-			Verse.Log.Error($"[Life Lessons: Patches] {msg}");
+			File.AppendAllText(logFile, str + "\n");
+#else
+			if (!_init) Init();
 			if (LLPatchesMod.settings.patchCEAmmo_Logging)
 				File.AppendAllText(logFile, msg + "\n");
+#endif
+		}
+
+		public static void DebugLog(string str)
+		{
+#if DEBUG
+			if (!_init) Init();
+			File.AppendAllText(logFile, str + "\n");
+#endif
 		}
 	}
 }
