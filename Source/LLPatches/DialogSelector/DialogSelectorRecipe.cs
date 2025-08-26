@@ -10,7 +10,7 @@ namespace LLPatches.DialogSelector
 {
 	public class DialogSelectorRecipe : DialogSelectorBase
 	{
-		DialogSelectorRecipe(List<DialogSelectorRow> inputList, Action<string> onClick) : base(inputList, onClick) { }
+		public DialogSelectorRecipe(List<DialogSelectorRow> inputList, Action<string> onClick) : base(inputList, onClick) { }
 
 		protected override void DrawRow(Rect inRect, DialogSelectorRow item)
 		{

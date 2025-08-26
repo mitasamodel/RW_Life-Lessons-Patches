@@ -1,4 +1,5 @@
 ﻿using CombatExtended;
+using LLPatches.DialogSelector;
 using LudeonTK;
 using RimWorld;
 using RW_Utils;
@@ -187,9 +188,12 @@ namespace LLPatches
 				Rect searchButton = new Rect(suffixRect.xMax, recipeRect.y, contentRowHeight, contentRowHeight);
 				if (Widgets.ButtonImage(searchButton, TexButton.OpenInspector))
 				{
-					Dialog_SelectorLauncher.Open(
-						BuildRowsRecipes,
-						recipeDef => template.Suffix = recipeDef
+					Dialog_SelectorLauncher.Open2(
+						() =>
+							new DialogSelectorRecipe(
+								BuildRowsRecipes(),
+								recipe => template.Suffix = recipe
+							)
 						);
 				}
 				if (drawBoxes) Widgets.DrawBox(searchButton);
