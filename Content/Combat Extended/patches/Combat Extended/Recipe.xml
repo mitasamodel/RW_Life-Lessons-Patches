@@ -1,6 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_NerveSpikerBolt"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>RecipeAmmoVenomBoltC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
     <xpath>Defs/RecipeDef[defName="MakeConcussionGrenade"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
@@ -312,6 +321,15 @@
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
         <templateDef>RecipeAmmoChargedC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_164x284mmDemo"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>RecipeShellHEC1</templateDef>
         <hardRequirement>False</hardRequirement>
       </li>
     </value>
@@ -834,6 +852,15 @@
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
         <templateDef>RecipeAmmoINC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_MechShell_Demo"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>RecipeShellHEC1</templateDef>
         <hardRequirement>False</hardRequirement>
       </li>
     </value>
@@ -2900,10 +2927,104 @@
     </value>
   </Operation>
   <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_BlunderbussShot"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>RecipeAmmoC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_CannonBall_Round"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PrinciplesMetalworking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.7</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_CannonBall_Bursting"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PrinciplesMetalworking</li>
+          <li>FoundationChemistry</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.7</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
     <xpath>Defs/RecipeDef[defName="MakeAmmo_CannonBall_Incendiary"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
         <templateDef>RecipeAmmoINC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_CannonBall_Grape"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PrinciplesMetalworking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.7</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_Catapult_Boulder"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PrinciplesStoneworking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.7</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
         <hardRequirement>False</hardRequirement>
       </li>
     </value>
@@ -2954,6 +3075,78 @@
     </value>
   </Operation>
   <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_MiniCannonBall_Round"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PrinciplesMetalworking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.7</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_MiniCannonBall_Grape"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PrinciplesMetalworking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.7</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_MortarGrenade"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>RecipeShellHEC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_MusketBall"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>FoundationChemistry</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.7</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
     <xpath>Defs/RecipeDef[defName="MakeAmmo_Arrow_Stone"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
@@ -2994,6 +3187,15 @@
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
         <templateDef>RecipeAmmoFlameArrowC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_Dart_Venom"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>RecipeAmmoVenomArrowC1</templateDef>
         <hardRequirement>False</hardRequirement>
       </li>
     </value>
@@ -3044,6 +3246,91 @@
     </value>
   </Operation>
   <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_Pilum"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Carving</li>
+          <li>PrinciplesMetalworking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.7</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_SlingBullet_Stone"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PrinciplesStoneworking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.7</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_SlingBullet_Steel"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PrinciplesMetalworking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.7</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_Nail"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PrinciplesMetalworking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.7</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
     <xpath>Defs/RecipeDef[defName="MakeAmmo_Flamethrower_Napalm"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
@@ -3066,6 +3353,27 @@
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
         <templateDef>RecipeFlameBiofC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_Flare"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>FoundationChemistry</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.7</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
         <hardRequirement>False</hardRequirement>
       </li>
     </value>
@@ -6140,6 +6448,15 @@
     </value>
   </Operation>
   <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_84x246mmR_CAN"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>RecipeShellHEC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
     <xpath>Defs/RecipeDef[defName="MakeAmmo_84x246mmR_Incendiary"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
@@ -6180,6 +6497,15 @@
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
         <templateDef>RecipeShellHEATC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_90mmRCR_CAN"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>RecipeShellHEC1</templateDef>
         <hardRequirement>False</hardRequirement>
       </li>
     </value>
@@ -6306,6 +6632,34 @@
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
         <templateDef>RecipeRocketEMPC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_TomahawkLAM"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>AirframeEngineering</li>
+          <li>PressurizedSystems</li>
+          <li>FineMechanicsAssembly</li>
+          <li>MicroelectronicsAssembly</li>
+          <li>Engines</li>
+          <li>Gunsmithing</li>
+          <li>Programming</li>
+          <li>Computers</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.2</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
         <hardRequirement>False</hardRequirement>
       </li>
     </value>
@@ -7391,6 +7745,15 @@
     </value>
   </Operation>
   <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_40mmGrenade_UNSCHEDP"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>RecipeGrenadeHEDPC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
     <xpath>Defs/RecipeDef[defName="MakeAmmo_5x23mmCaseless_FMJ"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
@@ -7445,6 +7808,15 @@
     </value>
   </Operation>
   <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_762x51mmUNSC_Shredder"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>RecipeAmmoC1</templateDef>
+        <hardRequirement>True</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
     <xpath>Defs/RecipeDef[defName="MakeAmmo_762x51mmUNSC_Incendiary"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
@@ -7482,6 +7854,15 @@
   </Operation>
   <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
     <xpath>Defs/RecipeDef[defName="MakeAmmo_8Gauge_Slug"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>RecipeAmmoC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_8Gauge_Flechette"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
         <templateDef>RecipeAmmoC1</templateDef>
@@ -7602,6 +7983,328 @@
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
         <templateDef>RecipeAmmoC2</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter75_Standard"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PhysicalChemistry</li>
+          <li>OrganicChemistry</li>
+          <li>MetalWorking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter75_Inferno"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PhysicalChemistry</li>
+          <li>OrganicChemistry</li>
+          <li>MetalWorking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter75_MetalStorm"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PhysicalChemistry</li>
+          <li>OrganicChemistry</li>
+          <li>MetalWorking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter75_Kraken"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PhysicalChemistry</li>
+          <li>OrganicChemistry</li>
+          <li>MetalWorking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter75_Tempest"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PhysicalChemistry</li>
+          <li>OrganicChemistry</li>
+          <li>MetalWorking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter50_Standard"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PhysicalChemistry</li>
+          <li>OrganicChemistry</li>
+          <li>MetalWorking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter50_Inferno"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PhysicalChemistry</li>
+          <li>OrganicChemistry</li>
+          <li>MetalWorking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter50_Kraken"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PhysicalChemistry</li>
+          <li>OrganicChemistry</li>
+          <li>MetalWorking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter50_Tempest"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PhysicalChemistry</li>
+          <li>OrganicChemistry</li>
+          <li>MetalWorking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter998_Standard"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PhysicalChemistry</li>
+          <li>OrganicChemistry</li>
+          <li>MetalWorking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter998_Inferno"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PhysicalChemistry</li>
+          <li>OrganicChemistry</li>
+          <li>MetalWorking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter998_MetalStorm"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PhysicalChemistry</li>
+          <li>OrganicChemistry</li>
+          <li>MetalWorking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter998_Kraken"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PhysicalChemistry</li>
+          <li>OrganicChemistry</li>
+          <li>MetalWorking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter998_Tempest"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PhysicalChemistry</li>
+          <li>OrganicChemistry</li>
+          <li>MetalWorking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
         <hardRequirement>False</hardRequirement>
       </li>
     </value>
