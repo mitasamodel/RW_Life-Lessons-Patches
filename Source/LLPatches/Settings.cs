@@ -23,6 +23,7 @@ namespace LLPatches
 		public const bool patchCEAmmo_ForceRemoveExisting_Default = false;
 		public const bool patchCEAmmo_Logging_Default = false;
 		public const bool patchCEAmmo_LogUnpatched_Default = false;
+		public const bool patchCEAmmo_LogWrongTemplates_Default = true;
 
 		// Legacy. Left for automatic migration.
 		private static readonly Dictionary<string, string> CEAmmoDefaultValues = new Dictionary<string, string>
@@ -76,6 +77,7 @@ namespace LLPatches
 		public bool patchCEAmmo_ForceRemoveExisting = patchCEAmmo_ForceRemoveExisting_Default;
 		public bool patchCEAmmo_Logging = patchCEAmmo_Logging_Default;
 		public bool patchCEAmmo_LogUnpatched = patchCEAmmo_LogUnpatched_Default;
+		public bool patchCEAmmo_LogWrongTemplates = patchCEAmmo_LogWrongTemplates_Default;
 
 		private Dictionary<string, string> _legacyDict = new Dictionary<string, string>();
 		public List<CEAmmoTemplate> CEAmmoTemplates;
@@ -90,6 +92,7 @@ namespace LLPatches
 			Scribe_Values.Look(ref patchCEAmmo_ForceRemoveExisting, "patchCEAmmo_ForceRemoveExisting", patchCEAmmo_ForceRemoveExisting_Default);
 			Scribe_Values.Look(ref patchCEAmmo_Logging, "patchCEAmmo_Logging", patchCEAmmo_Logging_Default);
 			Scribe_Values.Look(ref patchCEAmmo_LogUnpatched, "patchCEAmmo_LogUnpatched", patchCEAmmo_LogUnpatched_Default);
+			Scribe_Values.Look(ref patchCEAmmo_LogWrongTemplates, "patchCEAmmo_LogWrongTemplates", patchCEAmmo_LogWrongTemplates_Default);
 			Scribe_Collections.Look(ref CEAmmoTemplates, "CEAmmoTemplates", LookMode.Deep);
 
 			// Legacy dictionary. Only load, no saving.
@@ -210,7 +213,7 @@ namespace LLPatches
 			patchCEAmmo_ForceRemoveExisting = patchCEAmmo_ForceRemoveExisting_Default;
 			patchCEAmmo_Logging = patchCEAmmo_Logging_Default;
 			patchCEAmmo_LogUnpatched = patchCEAmmo_LogUnpatched_Default;
-			//Values = new Dictionary<string, string>(CEAmmoDefaultValues);
+			patchCEAmmo_LogWrongTemplates = patchCEAmmo_LogWrongTemplates_Default;
 		}
 
 		/// <summary>

@@ -4,10 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
@@ -29,87 +26,134 @@ namespace LLPatches
 			// Force re-write settings if migration happened.
 			if (LLPatchesMod.forceRewriteSettings)
 				LoadedModManager.GetMod<LLPatchesMod>()?.WriteSettings();
-				//LongEventHandler.ExecuteWhenFinished(() => LoadedModManager.GetMod<LLPatchesMod>()?.WriteSettings());
+			//LongEventHandler.ExecuteWhenFinished(() => LoadedModManager.GetMod<LLPatchesMod>()?.WriteSettings());
 
-				//CE Ammos have their separated recipes instead of auto-generated for items
+			//CE Ammos have their separated recipes instead of auto-generated for items
 			if (LLPatchesMod.settings.patchUnpatchedCEAmmo)
 				ProcessCEAmmoRecipes();
 		}
 
 		public static void ProcessCEAmmoRecipes()
 		{
-			//if (LLPatchesMod.settings.Values == null)
-			//{
-			//	Log_Error($"[Life Lessons: Patches] Settings are null: {LLPatchesMod.settings.Values == null}");
-			//	Verse.Log.Message("[Life Lessons: Patches] Please report it to mod author");
-			//	return;
-			//}
+			if (LLPatchesMod.settings.CEAmmoTemplates == null)
+			{
+				Log_Error($"[Life Lessons: Patches] Settings are null: {LLPatchesMod.settings.CEAmmoTemplates == null}");
+				Verse.Log.Message("[Life Lessons: Patches] Please report it to mod author");
+				return;
+			}
 
-			////List for ammo without appropriate template
-			//List<string> noTemplateRecipes = new List<string>();
+			// List for ammo without template.
+			List<string> noTemplateRecipes = new List<string>();
 
-			////Dictionary with k, v: k - ending of Ammo recipe, v - template to use
-			//Dictionary<string, string> Templates = LLPatchesMod.settings.Values;
-			////Order Keys by lenght, starting from longest, so "*Charged_AP" will be checked before "*_AP"
-			//var keys = Templates.Keys.OrderByDescending(k => k.Length);
+			// List of wrong templates.
+			List<string> wrongTemplates = new List<string>();
 
-			//foreach (RecipeDef recipe in GetAllAmmoRecipes())
-			//{
-			//	if (recipe.products.NullOrEmpty())
-			//	{
-			//		Log_Error($"[Life Lessons: Patches] Unexpected empty products list: {recipe.defName}");
-			//		Verse.Log.Message("[Life Lessons: Patches] Please report it to mod author");
-			//		continue;
-			//	}
+			// Templates.
+			var templates = LLPatchesMod.settings.CEAmmoTemplates
+				.Where(t => t.IsActive)
+				.OrderTemplates()
+				.ToList();
 
-			//	if (recipe.products.Count > 1)
-			//	{
-			//		Log_Error($"[Life Lessons: Patches] Recipe [{recipe.defName}] returns more than 1 product: {recipe.products.Count}");
-			//		Verse.Log.Message("[Life Lessons: Patches] Please report it to mod author");
-			//		continue;
-			//	}
+			int errorOnceKey = Rand.Int;
 
-			//	if (LLPatchesMod.settings.patchCEAmmo_Logging)
-			//		Log($"Recipe: {recipe.defName}. Ammo: {recipe.products[0].thingDef?.defName}");
+			foreach (RecipeDef recipe in Other.GetAllAmmoRecipes())
+			{
+				if (recipe.products.NullOrEmpty())
+				{
+					Log_Error($"[Life Lessons: Patches] Unexpected empty products list: {recipe.defName}");
+					Verse.Log.Message("[Life Lessons: Patches] Please report it to mod author");
+					continue;
+				}
 
-			//	string templateName = null;
-			//	foreach (string key in keys)
-			//	{
-			//		if (recipe.defName.EndsWith(key, StringComparison.OrdinalIgnoreCase))
-			//		{
-			//			templateName = Templates[key];
-			//			if (LLPatchesMod.settings.patchCEAmmo_Logging)
-			//				Log($"\t[Template] Key:{key} Name: {templateName}");
-			//			break;
-			//		}
-			//	}
+				if (recipe.products.Count > 1)
+				{
+					Log_Error($"[Life Lessons: Patches] Recipe [{recipe.defName}] returns more than 1 product: {recipe.products.Count}");
+					Verse.Log.Message("[Life Lessons: Patches] Please report it to mod author");
+					continue;
+				}
 
-			//	if (string.IsNullOrEmpty(templateName))
-			//		noTemplateRecipes.Add(recipe.defName);
-			//	else
-			//	{
-			//		if (ExtensionExist(recipe))
-			//		{
-			//			if (LLPatchesMod.settings.patchCEAmmo_ForceRemoveExisting)
-			//				RemoveExistingExtension(recipe);
-			//			else
-			//			{
-			//				if (LLPatchesMod.settings.patchCEAmmo_Logging)
-			//					Log($"\tBillProficiencyExtension already exists. Skipping");
-			//				continue;
-			//			}
-			//		}
-			//		recipe.AddTemplate(templateName);
-			//	}
-			//}
+				if (LLPatchesMod.settings.patchCEAmmo_Logging)
+					Log($"Recipe: {recipe.defName}. Ammo: {recipe.products[0].thingDef?.defName}");
 
-			//// Output summary if any recipes were unmatched
-			//if (noTemplateRecipes.Count > 0 && (LLPatchesMod.settings.patchCEAmmo_Logging || LLPatchesMod.settings.patchCEAmmo_LogUnpatched))
-			//{
-			//	Log("Recipes with no matching template:");
-			//	foreach (string recipeName in noTemplateRecipes)
-			//		Log($"\t- {recipeName}");
-			//}
+				string templateName = null;
+				foreach (CEAmmoTemplate template in templates)
+				{
+					// Both are set: Prefix & Suffix.
+					if (!string.IsNullOrEmpty(template.Prefix) && !string.IsNullOrEmpty(template.Suffix))
+					{
+						if (recipe.defName.StartsWith(template.Prefix, StringComparison.OrdinalIgnoreCase) &&
+							recipe.defName.EndsWith(template.Suffix, StringComparison.OrdinalIgnoreCase))
+						{
+							templateName = template.Template;
+							if (LLPatchesMod.settings.patchCEAmmo_Logging)
+								Log($"\t[Template] {template.Prefix}:::{template.Suffix} Name: {templateName}");
+							break;
+						}
+					}
+
+					// Only Prefix is set.
+					else if (!string.IsNullOrEmpty(template.Prefix))
+					{
+						if (recipe.defName.StartsWith(template.Prefix, StringComparison.OrdinalIgnoreCase))
+						{
+							templateName = template.Template;
+							if (LLPatchesMod.settings.patchCEAmmo_Logging)
+								Log($"\t[Template] {template.Prefix}:::{template.Suffix} Name: {templateName}");
+							break;
+						}
+					}
+
+					// Only Suffix is set.
+					else if (!string.IsNullOrEmpty(template.Suffix))
+					{
+						if (recipe.defName.EndsWith(template.Suffix, StringComparison.OrdinalIgnoreCase))
+						{
+							templateName = template.Template;
+							if (LLPatchesMod.settings.patchCEAmmo_Logging)
+								Log($"\t[Template] {template.Prefix}:::{template.Suffix} Name: {templateName}");
+							break;
+						}
+					}
+				}
+
+				if (string.IsNullOrEmpty(templateName))
+					noTemplateRecipes.Add(recipe.defName);
+				else
+				{
+					if (ExtensionExist(recipe))
+					{
+						if (LLPatchesMod.settings.patchCEAmmo_ForceRemoveExisting)
+							RemoveExistingExtension(recipe);
+						else
+						{
+							if (LLPatchesMod.settings.patchCEAmmo_Logging)
+								Log($"\tBillProficiencyExtension already exists. Skipping");
+							continue;
+						}
+					}
+					if (!recipe.AddTemplate(templateName))
+					{
+						Verse.Log.WarningOnce($"[Life Lessons: Patches] Some CE Ammo templates have not been found. Enable and check log.", errorOnceKey);
+						wrongTemplates.Add(templateName);
+					}
+				}
+			}
+
+			// Output the wrong templates list.
+			if (wrongTemplates.Count > 0 && (LLPatchesMod.settings.patchCEAmmo_Logging || LLPatchesMod.settings.patchCEAmmo_LogWrongTemplates))
+			{
+				Log("Templates without Defs:");
+				foreach (var name in wrongTemplates)
+					Log($"\t- {name}");
+			}
+
+			// Output summary if any recipes were unmatched.
+			if (noTemplateRecipes.Count > 0 && (LLPatchesMod.settings.patchCEAmmo_Logging || LLPatchesMod.settings.patchCEAmmo_LogUnpatched))
+			{
+				Log("Recipes with no matching template:");
+				foreach (string recipeName in noTemplateRecipes)
+					Log($"\t- {recipeName}");
+			}
 		}
 
 		private static bool ExtensionExist(RecipeDef recipe)
@@ -129,20 +173,19 @@ namespace LLPatches
 			}
 		}
 
-		static void AddTemplate(this RecipeDef recipe, string templateName)
+		static bool AddTemplate(this RecipeDef recipe, string templateName)
 		{
 			var newExtension = new BillProficiencyExtension()
 			{
 				templateDef = DefDatabase<ThingProficiencyTemplateDef>.GetNamedSilentFail(templateName),
 				hardRequirement = false
 			};
-			if (newExtension.templateDef == null)
-				Log_Error($"Cannot find template [{templateName}]");
+			if (newExtension.templateDef == null) return false;
 			else
 			{
-				if (recipe.modExtensions == null)
-					recipe.modExtensions = new List<DefModExtension>();
+				recipe.modExtensions ??= new List<DefModExtension>();
 				recipe.modExtensions.Add(newExtension);
+				return true;
 			}
 		}
 

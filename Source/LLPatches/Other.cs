@@ -4,11 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
+using Verse.Noise;
 
 namespace LLPatches
 {
-	public class Other
+	public static class Other
 	{
+
+		internal static IEnumerable<CEAmmoTemplate> OrderTemplates(this IEnumerable<CEAmmoTemplate> templates)
+		{
+			return templates
+				.OrderBy(t => (string.IsNullOrEmpty(t.Prefix) && string.IsNullOrEmpty(t.Suffix)) ? 0 : 1)       // Empty goes up (newly added).
+				.ThenByDescending(t => t.Prefix?.Length ?? -1)                // Then, the longest Prefixes.
+				.ThenByDescending(t => t.Suffix?.Length ?? -1);                // Then, the longest Suffixes.
+		}
+
 		/// <summary>
 		/// Gets all CE ammo recipes which don't have "recipeMaker" -> Non-auto-generated recipes. For auto-generated recipes the "item" should be modified instead.
 		/// </summary>
@@ -23,7 +33,7 @@ namespace LLPatches
 					)
 				)
 				.ToList();
-			Logger.DebugLog($"ammoRecipesDefs: {ammoRecipesDefs.Count}");
+			//Logger.DebugLog($"ammoRecipesDefs: {ammoRecipesDefs.Count}");
 			return ammoRecipesDefs;
 		}
 

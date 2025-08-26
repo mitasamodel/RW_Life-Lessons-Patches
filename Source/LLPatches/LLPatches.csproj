@@ -76,13 +76,11 @@
     <Compile Include="DialogSelector\DialogSelectorBase.cs" />
     <Compile Include="DialogSelector\DialogSelectorRecipe.cs" />
     <Compile Include="DialogSelector\DialogSelectorRow.cs" />
-    <Compile Include="DialogSelector\Dialog_Selector.cs" />
-    <Compile Include="DialogSelector\Dialog_SelectorLauncher.cs" />
+    <Compile Include="DialogSelector\DialogSelectorLauncher.cs" />
     <Compile Include="dummyTab2.cs" />
     <Compile Include="dummyTab.cs" />
     <Compile Include="ITabHost.cs" />
     <Compile Include="ITabView.cs" />
-    <Compile Include="Listing_StandardExtensions.cs" />
     <Compile Include="LLPatches.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="Other.cs" />

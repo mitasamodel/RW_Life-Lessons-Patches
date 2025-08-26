@@ -12,18 +12,19 @@ namespace LLPatches
 	public abstract class DialogSelectorBase : Window
 	{
 		// Helper variables.
-		private readonly float rowH = Utils_GUI.rowHeight;
+		private readonly float rowHeight = Utils_GUI.rowHeight;
 		private readonly float scrollW = Utils_GUI.scrollWidth;
 
 		public override Vector2 InitialSize => new Vector2(500f, 600f);
+
 		private List<DialogSelectorRow> _filteredList;
 		private string _search = "";
 
 		// "Action" or "delegate" is basically a pointer to a function (in C).
-		private Action<string> _onSelect;     // Executes method, stored in _onSelect, with 1 argument - nullable int ("null" is allowed too)
+		private Action<string> _onSelect;     // Executes method, stored in _onSelect, with 1 argument.
 		private Action<Vector2> _onCloseScroll;
 		private Vector2 _scroll;
-		private Rect? _anchorScreenRect;    // Screen-space rect of the control that opened this dialog (optional)
+		private Rect? _anchorScreenRect;    // Screen-space rect of the control that opened this dialog (optional).
 		private readonly List<DialogSelectorRow> _inputList;
 
 		public DialogSelectorBase(List<DialogSelectorRow> inputList)
@@ -50,7 +51,7 @@ namespace LLPatches
 		public override void DoWindowContents(Rect inRect)
 		{
 			// Search field
-			Rect searchRect = new Rect(0f, 0f, inRect.width, rowH);
+			Rect searchRect = new Rect(0f, 0f, inRect.width, rowHeight);
 			string newSearch = Widgets.TextField(searchRect, _search);
 			if (newSearch != _search)
 			{
@@ -59,15 +60,15 @@ namespace LLPatches
 			}
 
 			//Scrollable area
-			float contentHeight = _filteredList.Count * rowH;
+			float contentHeight = _filteredList.Count * rowHeight;
 			Rect positionRect = new Rect(0f, searchRect.height, inRect.width, inRect.height - searchRect.height);   // Where scroll area located.
-			Rect contentRect = new Rect(0f, 0f, positionRect.width - scrollW, contentHeight);     //The content inside the scroll area. Coordinates are separate.
+			Rect contentRect = new Rect(0f, 0f, positionRect.width - scrollW, contentHeight);     //The content inside the scroll area. Coordinates are internal.
 			Widgets.BeginScrollView(positionRect, ref _scroll, contentRect, true);
 			float curY = 0f;
 
 			foreach (var item in _filteredList)
 			{
-				Rect rowRect = new Rect(0, curY, contentRect.width, Utils_GUI.rowHeight);
+				Rect rowRect = new Rect(0, curY, contentRect.width, rowHeight);
 				DrawRow(rowRect, item);
 				if (Widgets.ButtonInvisible(rowRect))
 				{
@@ -75,7 +76,7 @@ namespace LLPatches
 					Close();
 				}
 
-				curY += Utils_GUI.rowHeight;
+				curY += rowHeight;
 			}
 			Widgets.EndScrollView();
 		}

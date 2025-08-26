@@ -33,15 +33,19 @@ namespace LLPatches
 			listing.Begin(listingRect);
 			listing.LabelCentered("Combat Extended Ammo Patch Options");
 			listing.CheckboxLabeled("Patch unpatched CE ammo", ref LLPatchesMod.settings.patchUnpatchedCEAmmo,
-				"Automatically apply proficiency requirements for crafting CE ammo if it is has none.\n\n" +
+				"Automatically apply proficiency requirements for crafting CE ammo if there is none.\n\n" +
 				"Patch applied during startup or by manually clicking the button below.\n" +
 				"To disable it, uncheck the option and restart the game.\n\n" +
 				"Patch does NOT overwrite any files, it is safe to apply it, test it and then disable if not needed.");
 			listing.CheckboxLabeled("Log ammo without template", ref LLPatchesMod.settings.patchCEAmmo_LogUnpatched,
-				"Outputs the list of CE ammo, for which no template has been found.\n\n" +
+				"Output the list of CE ammo, for which no template has been found.\n\n" +
+				"Location: " + @Environment.CurrentDirectory + @"\Mods\LLPatches.log");
+			listing.CheckboxLabeled("Log incorrect templates", ref LLPatchesMod.settings.patchCEAmmo_LogWrongTemplates,
+				"Output the list of assigned to CE ammo templates, which have no template data defined.\n\n" +
+				"The template must be defined in order to use it. This mod does not create template.\n\n" + 
 				"Location: " + @Environment.CurrentDirectory + @"\Mods\LLPatches.log");
 			listing.CheckboxLabeled("Advanced", ref LLPatchesMod.settings.patchCEAmmo_Manual, "Check the templates or set them manually.\n" +
-				"Disabling this option will set values to their DEFAULTs.\n\n" +
+				"Disabling this option will not restore the defaults. Use the button on corrensponding tab instead.\n\n" +
 				"Default templates location:\nContent\\Combat Extended\\Defs\\Combat Extended\\Templates_Recipies_Ammo.xml."
 				);
 
@@ -49,8 +53,8 @@ namespace LLPatches
 			if (_manualPrev != LLPatchesMod.settings.patchCEAmmo_Manual)
 			{
 				_manualPrev = LLPatchesMod.settings.patchCEAmmo_Manual;
-				if (!LLPatchesMod.settings.patchCEAmmo_Manual)
-					LLPatchesMod.settings.CEAmmoToDefaults();
+				//if (!LLPatchesMod.settings.patchCEAmmo_Manual)
+				//	LLPatchesMod.settings.CEAmmoToDefaults();
 				_host.ResetTabs();
 			}
 

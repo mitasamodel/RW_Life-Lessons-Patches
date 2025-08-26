@@ -1,4 +1,5 @@
 ﻿using CombatExtended;
+using LifeLessons;
 using LLPatches.DialogSelector;
 using LudeonTK;
 using RimWorld;
@@ -74,6 +75,9 @@ namespace LLPatches
 			}
 		}
 
+		//bool drawBox = true;
+		//bool drawBoxDeep = false;
+
 		public void Draw(Rect inRect)
 		{
 			var wrap = Utils_GUI.SetWrap(false);
@@ -85,9 +89,13 @@ namespace LLPatches
 			curY += SearchField(mainContentRect, curY);
 
 			Rect menuRect = new Rect(mainContentRect.x, curY, mainContentRect.width, rowHeight * 2);
+			//Utils_GUI.DrawBox(menuRect, Color.green);
 			Rect menuActonsRect = DrawMenuActions(menuRect);
+			//Utils_GUI.DrawBox(menuActonsRect, Color.grey);
 			Rect menuRecipeRect = DrawMenuRecipes(menuActonsRect);
+			//if (drawBox) Utils_GUI.DrawBox(menuRecipeRect, Color.grey);
 			Rect menuTemplateRect = DrawMenuTemplates(mainContentRect, menuRecipeRect);
+			//if (drawBox) Utils_GUI.DrawBox(menuTemplateRect, Color.grey);
 
 			curY += menuRect.height;
 
@@ -124,19 +132,14 @@ namespace LLPatches
 			float totalHeight = contentRowHeight * _filteredList.Count;
 			Rect scrollPositionRect = new Rect(mainContentRect.x, curY, mainContentRect.width, mainContentRect.height - curY + mainContentRect.y);
 			Rect scrollContentRect = new Rect(0f, 0f, scrollPositionRect.width - Utils_GUI.scrollWidth, totalHeight);
-			Utils_GUI.DrawBox(mainContentRect, Color.green);
-			Widgets.DrawBox(scrollPositionRect);
+			//Utils_GUI.DrawBox(mainContentRect, Color.green);
+			//Widgets.DrawBox(scrollPositionRect);
 
 			float viewTop = _scroll.y;
 			float viewBot = _scroll.y + scrollPositionRect.height;
 			float scrollY = 0f;
 			Widgets.BeginScrollView(scrollPositionRect, ref _scroll, scrollContentRect);
 			Rect rowRect = new Rect(0f, scrollY, scrollContentRect.width, Utils_GUI.rowHeight);
-
-			bool drawBoxes = false;
-#if DEBUG
-			drawBoxes = false;
-#endif
 
 			foreach (CEAmmoTemplate template in _filteredList)
 			{
@@ -163,18 +166,18 @@ namespace LLPatches
 				Rect suspendButtonRect = new Rect(actionsRect.x, actionsRect.y, contentRowHeight, contentRowHeight);
 				if (Widgets.ButtonImage(suspendButtonRect, TexButton.Suspend))
 					template.SwitchEnable();
-				if (drawBoxes) Widgets.DrawBox(suspendButtonRect);
+				//Widgets.DrawBox(suspendButtonRect);
 
 				// Delete button.
 				Rect deleteButtonRect = new Rect(suspendButtonRect.xMax, actionsRect.y, contentRowHeight, contentRowHeight);
 				if (Widgets.ButtonImage(deleteButtonRect, LLPatches.IconRemove, Color.white, SelectedButtonRed))
 					_toDelete = template;
-				if (drawBoxes) Widgets.DrawBox(deleteButtonRect);
+				//Widgets.DrawBox(deleteButtonRect);
 
 				// Restore button.
 				Rect restoreButtonRect = new Rect(deleteButtonRect.xMax, actionsRect.y, contentRowHeight, contentRowHeight);
 				//Widgets.ButtonImage(restoreButtonRect, LLPatches.IconRestore);
-				if (drawBoxes) Widgets.DrawBox(restoreButtonRect);
+				//Widgets.DrawBox(restoreButtonRect);
 
 				//== Recipe.
 				Rect recipeRect = menuRecipeRect;
@@ -185,19 +188,13 @@ namespace LLPatches
 				template.Prefix = Utils_GUI.TextFieldStruck(prefixRect, template.Prefix, tfStyle, !template.IsActive);
 				Rect suffixRect = new Rect(recipeRect.x + _prefixWidth + _verticalGapSmall, recipeRect.y, _suffixWidth, contentRowHeight);
 				template.Suffix = Utils_GUI.TextFieldStruck(suffixRect, template.Suffix, tfStyle, !template.IsActive);
-				Rect searchButton = new Rect(suffixRect.xMax, recipeRect.y, contentRowHeight, contentRowHeight);
-				if (Widgets.ButtonImage(searchButton, TexButton.OpenInspector))
+				Rect searchButtonRecipe = new Rect(suffixRect.xMax, recipeRect.y, contentRowHeight, contentRowHeight);
+				if (Widgets.ButtonImage(searchButtonRecipe, TexButton.OpenInspector))
 				{
-					Dialog_SelectorLauncher.Open2(
-						() =>
-							new DialogSelectorRecipe(
-								BuildRowsRecipes(),
-								recipe => template.Suffix = recipe
-							)
-						);
+					DialogSelectorLauncher.Open2(RecipeSelectorFactory, template);
 				}
-				if (drawBoxes) Widgets.DrawBox(searchButton);
-				if (drawBoxes) Widgets.DrawBox(recipeRect);
+				//Widgets.DrawBox(searchButtonRecipe);
+				//Widgets.DrawBox(recipeRect);
 
 				Rect templateRect = menuTemplateRect;
 				templateRect.y = scrollY;
@@ -205,8 +202,13 @@ namespace LLPatches
 				templateRect.height = contentRowHeight;
 				Rect templateFieldRect = new Rect(templateRect.x, templateRect.y, templateRect.width - _selectButtonWidth - _verticalGapSmall, contentRowHeight);
 				template.Template = Utils_GUI.TextFieldStruck(templateFieldRect, template.Template, tfStyle, !template.IsActive);
+				Rect searchButtonTemplate = new Rect(templateFieldRect.xMax, templateFieldRect.y, contentRowHeight, contentRowHeight);
+				if (Widgets.ButtonImage(searchButtonTemplate, TexButton.OpenInspector))
+				{
+					DialogSelectorLauncher.Open2(TemplateSelectorFactory, template);
+				}
 				//Utils_GUI.LabelCentered(new Rect(templateRect.xMax - _selectButtonWidth, templateRect.y, _selectButtonWidth, contentRowHeight), "▼ Select");
-				if (drawBoxes) Widgets.DrawBox(templateRect);
+				//Widgets.DrawBox(templateRect);
 
 				GUI.color = Color.white;
 
@@ -216,6 +218,30 @@ namespace LLPatches
 			Widgets.EndScrollView();
 
 			return curY;
+		}
+
+		private static Window TemplateSelectorFactory(CEAmmoTemplate template)
+		{
+			//TODO: currently the same class as for recipies is used. Mb in future add more info to the dialog.
+			return new DialogSelectorRecipe(
+					BuildRowsTemplates(),
+					recipe => template.Suffix = recipe
+				);
+		}
+
+		private static Window RecipeSelectorFactory(CEAmmoTemplate template)
+		{
+			return new DialogSelectorRecipe(
+					BuildRowsRecipes(),
+					recipe => template.Suffix = recipe
+				);
+		}
+
+		private static List<DialogSelectorRow> BuildRowsTemplates()
+		{
+			return DefDatabase<ThingProficiencyTemplateDef>.AllDefsListForReading
+				.Select(t => new DialogSelectorRow(t.defName, t.label, t.label, t.defName))
+				.ToList();
 		}
 
 		private static List<DialogSelectorRow> BuildRowsRecipes()
@@ -250,12 +276,25 @@ namespace LLPatches
 		private Rect DrawMenuActions(Rect menuRect)
 		{
 			Rect menuActionsRect = menuRect;
-			//menuActionsRect.width = rowHeight * 3 + _verticalGapSmall * 2;
-			menuActionsRect.width = rowHeight * 3;
-			float iconWidth = rowHeight * 2;
-			Rect iconRect = new Rect((menuActionsRect.width - iconWidth) / 2, menuActionsRect.y, iconWidth, iconWidth);
-			if (Widgets.ButtonImage(iconRect, TexButton.Plus))
+			menuActionsRect.width = 3 * rowHeight;
+			Rect iconsRect = menuActionsRect.CenterMiddle(2 * rowHeight, rowHeight);
+			Rect addIconRect = new Rect(iconsRect.x, iconsRect.y, rowHeight, rowHeight);
+			if (Widgets.ButtonImage(addIconRect, TexButton.Plus))
 				_toAdd = true;
+			Rect infoIconRect = new Rect(addIconRect.xMax, addIconRect.y, rowHeight, rowHeight).CenterH(rowHeight);
+			//Utils_GUI.LabelTooltip(infoIconRect, "[I]", "asd");
+			Widgets.ButtonImage(infoIconRect, TexButton.Info, false, "Templates are applied in the same order as they displayed here.\n" +
+				"Exception: newly added template without Prefix or Suffix displayed on top (for convenience), but will not be applied at all.\n\n" +
+				"Order:\n" + 
+				"First, templates, which have both - Prefix and Suffix.\n"+
+				"Then, templates are sorted by the length of Prefix.\n" + 
+				"Remaining templates are sorted by the length of Suffix.\n\n" + 
+				"It is OK for most cases to use only Suffix. Prefix should be used only in cases, where Suffix will match several unrelated things.\n" + 
+				"Example: \"_HE\" Suffix without any Prefix will match by default for both - Ammos and Shells."
+				);
+
+			//Widgets.DrawBox(addIconRect);
+			//Widgets.DrawBox(infoIconRect);
 			return menuActionsRect;
 		}
 
@@ -284,10 +323,7 @@ namespace LLPatches
 				.Where(t => string.IsNullOrEmpty(_search) || Matches(t.Prefix) || Matches(t.Suffix) || Matches(t.Template));
 
 			// Order.
-			_filteredList = filtered
-				.OrderBy(t => string.IsNullOrEmpty(t.Suffix) ? 0 : 1)   // All empty suffixes treated as "0", means they go up.
-				.ThenByDescending(t => t.Suffix?.Length)    // All remaining items ordered normally by length.
-				.ToList();
+			_filteredList = filtered.OrderTemplates().ToList();
 		}
 
 		public bool Enabled() => ModsConfig.IsActive("CETeam.CombatExtended") && LLPatchesMod.settings.patchCEAmmo_Manual;
