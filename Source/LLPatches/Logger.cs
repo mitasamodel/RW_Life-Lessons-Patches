@@ -41,7 +41,7 @@ namespace LLPatches
 #else
 			if (!_init) Init();
 			if (LLPatchesMod.settings.patchCEAmmo_Logging)
-				File.AppendAllText(logFile, msg + "\n");
+				File.AppendAllText(logFile, str + "\n");
 #endif
 		}
 

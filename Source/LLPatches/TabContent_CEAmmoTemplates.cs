@@ -225,7 +225,7 @@ namespace LLPatches
 			//TODO: currently the same class as for recipies is used. Mb in future add more info to the dialog.
 			return new DialogSelectorRecipe(
 					BuildRowsTemplates(),
-					recipe => template.Suffix = recipe
+					recipe => template.Template = recipe
 				);
 		}
 
@@ -283,15 +283,16 @@ namespace LLPatches
 				_toAdd = true;
 			Rect infoIconRect = new Rect(addIconRect.xMax, addIconRect.y, rowHeight, rowHeight).CenterH(rowHeight);
 			//Utils_GUI.LabelTooltip(infoIconRect, "[I]", "asd");
-			Widgets.ButtonImage(infoIconRect, TexButton.Info, false, "Templates are applied in the same order as they displayed here.\n" +
-				"Exception: newly added template without Prefix or Suffix displayed on top (for convenience), but will not be applied at all.\n\n" +
-				"Order:\n" + 
-				"First, templates, which have both - Prefix and Suffix.\n"+
-				"Then, templates are sorted by the length of Prefix.\n" + 
-				"Remaining templates are sorted by the length of Suffix.\n\n" + 
-				"It is OK for most cases to use only Suffix. Prefix should be used only in cases, where Suffix will match several unrelated things.\n" + 
-				"Example: \"_HE\" Suffix without any Prefix will match by default for both - Ammos and Shells."
-				);
+			Widgets.ButtonImage(infoIconRect, TexButton.Info, false,
+				"Templates are applied in the same order as they are displayed here.\n" +
+				"Exception: newly added templates without a Prefix or Suffix are displayed at the top (for convenience), but will not be applied.\n\n" +
+				"Order:\n" +
+				"1. Templates that have both a Prefix and a Suffix.\n" +
+				"2. Templates sorted by the length of the Prefix.\n" +
+				"3. Remaining templates sorted by the length of the Suffix.\n\n" +
+				"In most cases, it is fine to use only a Suffix. A Prefix should only be used when the Suffix would otherwise match several unrelated items.\n" +
+				"Example: the Suffix \"_HE\" without any Prefix will match both Ammos and Shells by default."
+			);
 
 			//Widgets.DrawBox(addIconRect);
 			//Widgets.DrawBox(infoIconRect);
