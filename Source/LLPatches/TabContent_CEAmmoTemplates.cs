@@ -321,7 +321,12 @@ namespace LLPatches
 
 			// Filter first.
 			var filtered = LLPatchesMod.settings.CEAmmoTemplates
-				.Where(t => string.IsNullOrEmpty(_search) || Matches(t.Prefix) || Matches(t.Suffix) || Matches(t.Template));
+				.Where(t => string.IsNullOrEmpty(_search) ||
+					(string.IsNullOrEmpty(t.Prefix) && string.IsNullOrEmpty(t.Suffix)) ||
+					Matches(t.Prefix) ||
+					Matches(t.Suffix) ||
+					Matches(t.Template)
+				);
 
 			// Order.
 			_filteredList = filtered.OrderTemplates().ToList();
