@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<LifeLessons.ThingProficiencyTemplateDef>
+		<defName>RecipeFlameNapalmC1</defName>
+		<description>Chemfuel.</description>
+		<requirements>
+			<li>InorganicChemistry</li>
+			<li>OrganicChemistry</li>
+		</requirements>
+		<unqualifiedPenalty>
+			<statModifiers>
+				<li>
+					<stat>GeneralLaborSpeed</stat>
+					<applyGlobally>True</applyGlobally>
+					<modifier>0.7</modifier>
+				</li>
+			</statModifiers>
+			<qualityCap>Normal</qualityCap>
+		</unqualifiedPenalty>
+		<hardRequirement>False</hardRequirement>
+	</LifeLessons.ThingProficiencyTemplateDef>
+	<LifeLessons.ThingProficiencyTemplateDef>
+		<defName>RecipeFlamePromC1</defName>
+		<description>Prometheum fuel.</description>
+		<requirements>
+			<li>InorganicChemistry</li>
+			<li>OrganicChemistry</li>
+		</requirements>
+		<unqualifiedPenalty>
+			<statModifiers>
+				<li>
+					<stat>GeneralLaborSpeed</stat>
+					<applyGlobally>True</applyGlobally>
+					<modifier>0.5</modifier>
+				</li>
+			</statModifiers>
+			<qualityCap>Normal</qualityCap>
+		</unqualifiedPenalty>
+		<hardRequirement>False</hardRequirement>
+	</LifeLessons.ThingProficiencyTemplateDef>
+	<LifeLessons.ThingProficiencyTemplateDef>
+		<defName>RecipeFlameBiofC1</defName>
+		<description>Bioferrite fuel.</description>
+		<requirements>
+			<li>InorganicChemistry</li>
+			<li>Biochemistry</li>
+		</requirements>
+		<unqualifiedPenalty>
+			<statModifiers>
+				<li>
+					<stat>GeneralLaborSpeed</stat>
+					<applyGlobally>True</applyGlobally>
+					<modifier>0.7</modifier>
+				</li>
+			</statModifiers>
+			<qualityCap>Normal</qualityCap>
+		</unqualifiedPenalty>
+		<hardRequirement>False</hardRequirement>
+	</LifeLessons.ThingProficiencyTemplateDef>
+</Defs>
+

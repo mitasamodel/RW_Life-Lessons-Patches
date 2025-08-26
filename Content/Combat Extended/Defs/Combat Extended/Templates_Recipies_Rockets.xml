@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<LifeLessons.ThingProficiencyTemplateDef>
+		<defName>RecipeRocketHEC1</defName>
+		<description>High explosive rocket. Includes high-explosive component (usually Pentaerythritol tetranitrate - organic compound)</description>
+		<requirements>
+			<li>MetalWorking</li>
+			<li>InorganicChemistry</li>
+			<li>OrganicChemistry</li>
+		</requirements>
+		<unqualifiedPenalty>
+			<statModifiers>
+				<li>
+					<stat>GeneralLaborSpeed</stat>
+					<applyGlobally>True</applyGlobally>
+					<modifier>0.7</modifier>
+				</li>
+			</statModifiers>
+			<qualityCap>Normal</qualityCap>
+		</unqualifiedPenalty>
+		<hardRequirement>False</hardRequirement>
+	</LifeLessons.ThingProficiencyTemplateDef>
+	<LifeLessons.ThingProficiencyTemplateDef>
+		<defName>RecipeRocketHEATC1</defName>
+		<description>High explosive anti-tank rocket. Includes high-explosive component (usually Pentaerythritol tetranitrate - organic compound)</description>
+		<requirements>
+			<li>MetalWorking</li>
+			<li>InorganicChemistry</li>
+			<li>OrganicChemistry</li>
+		</requirements>
+		<unqualifiedPenalty>
+			<statModifiers>
+				<li>
+					<stat>GeneralLaborSpeed</stat>
+					<applyGlobally>True</applyGlobally>
+					<modifier>0.7</modifier>
+				</li>
+			</statModifiers>
+			<qualityCap>Normal</qualityCap>
+		</unqualifiedPenalty>
+		<hardRequirement>False</hardRequirement>
+	</LifeLessons.ThingProficiencyTemplateDef>
+	<LifeLessons.ThingProficiencyTemplateDef>
+		<defName>RecipeRocketEMPC1</defName>
+		<description>EMP rocket with electronics.</description>
+		<requirements>
+			<li>MetalWorking</li>
+			<li>FoundationChemistry</li>
+			<li>MicroelectronicsAssembly</li>
+		</requirements>
+		<unqualifiedPenalty>
+			<statModifiers>
+				<li>
+					<stat>GeneralLaborSpeed</stat>
+					<applyGlobally>True</applyGlobally>
+					<modifier>0.7</modifier>
+				</li>
+			</statModifiers>
+			<qualityCap>Normal</qualityCap>
+		</unqualifiedPenalty>
+		<hardRequirement>False</hardRequirement>
+	</LifeLessons.ThingProficiencyTemplateDef>
+</Defs>
+

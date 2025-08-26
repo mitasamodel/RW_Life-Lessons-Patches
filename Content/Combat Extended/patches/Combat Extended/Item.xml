@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationAddModExtension">
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
     <xpath>Defs/ThingDef[defName="CE_Apparel_TacVest"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
@@ -9,7 +9,7 @@
       </li>
     </value>
   </Operation>
-  <Operation Class="PatchOperationAddModExtension">
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
     <xpath>Defs/ThingDef[defName="CE_Apparel_Backpack"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
@@ -18,7 +18,7 @@
       </li>
     </value>
   </Operation>
-  <Operation Class="PatchOperationAddModExtension">
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
     <xpath>Defs/ThingDef[defName="CE_Apparel_KidBackpack"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
@@ -27,7 +27,7 @@
       </li>
     </value>
   </Operation>
-  <Operation Class="PatchOperationAddModExtension">
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
     <xpath>Defs/ThingDef[defName="CE_Apparel_RadioPack"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
@@ -48,7 +48,7 @@
       </li>
     </value>
   </Operation>
-  <Operation Class="PatchOperationAddModExtension">
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
     <xpath>Defs/ThingDef[defName="CE_Apparel_ExoFrame"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
@@ -57,7 +57,7 @@
       </li>
     </value>
   </Operation>
-  <Operation Class="PatchOperationAddModExtension">
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
     <xpath>Defs/ThingDef[defName="CE_Apparel_PlateHelmet"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
@@ -66,7 +66,7 @@
       </li>
     </value>
   </Operation>
-  <Operation Class="PatchOperationAddModExtension">
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
     <xpath>Defs/ThingDef[defName="CE_Apparel_GasMask"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
@@ -87,7 +87,7 @@
       </li>
     </value>
   </Operation>
-  <Operation Class="PatchOperationAddModExtension">
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
     <xpath>Defs/ThingDef[defName="CE_Apparel_SimpleNightVision"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
@@ -108,7 +108,7 @@
       </li>
     </value>
   </Operation>
-  <Operation Class="PatchOperationAddModExtension">
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
     <xpath>Defs/ThingDef[defName="CE_Apparel_AdvancedNightVision"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
@@ -129,7 +129,7 @@
       </li>
     </value>
   </Operation>
-  <Operation Class="PatchOperationAddModExtension">
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
     <xpath>Defs/ThingDef[defName="CE_Apparel_MeleeShield"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
@@ -161,7 +161,7 @@
       </li>
     </value>
   </Operation>
-  <Operation Class="PatchOperationAddModExtension">
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
     <xpath>Defs/ThingDef[defName="CE_Apparel_BallisticShield"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
@@ -182,7 +182,7 @@
       </li>
     </value>
   </Operation>
-  <Operation Class="PatchOperationAddModExtension">
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
     <xpath>Defs/ThingDef[defName="CE_Apparel_CompositeVest"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
@@ -204,7 +204,7 @@
       </li>
     </value>
   </Operation>
-  <Operation Class="PatchOperationAddModExtension">
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
     <xpath>Defs/ThingDef[defName="CE_GrenadeLauncher"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
@@ -213,7 +213,7 @@
       </li>
     </value>
   </Operation>
-  <Operation Class="PatchOperationAddModExtension">
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
     <xpath>Defs/ThingDef[defName="CE_FlareGun"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
@@ -222,7 +222,7 @@
       </li>
     </value>
   </Operation>
-  <Operation Class="PatchOperationAddModExtension">
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
     <xpath>Defs/ThingDef[defName="Pila"]|Defs/CombatExtended.AmmoDef[defName="Pila"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
@@ -245,7 +245,7 @@
       </li>
     </value>
   </Operation>
-  <Operation Class="PatchOperationAddModExtension">
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
     <xpath>Defs/ThingDef[defName="Gun_BinocularsRadio"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">

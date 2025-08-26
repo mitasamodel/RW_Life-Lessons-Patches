@@ -1,9 +1,131 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<LifeLessons.ThingProficiencyTemplateDef>
-		<defName>RecipeAmmoC1</defName>
-		<description>Simple gunpowder ammo: 12 gauge, 5.56x45, etc.</description>
+		<defName>RecipeGrenadeHEC1</defName>
+		<description>High explosive grenade. Includes high-explosive component (usually Pentaerythritol tetranitrate - organic compound)</description>
 		<requirements>
+			<li>MetalWorking</li>
+			<li>InorganicChemistry</li>
+			<li>OrganicChemistry</li>
+		</requirements>
+		<unqualifiedPenalty>
+			<statModifiers>
+				<li>
+					<stat>GeneralLaborSpeed</stat>
+					<applyGlobally>True</applyGlobally>
+					<modifier>0.7</modifier>
+				</li>
+			</statModifiers>
+			<qualityCap>Normal</qualityCap>
+		</unqualifiedPenalty>
+		<hardRequirement>False</hardRequirement>
+	</LifeLessons.ThingProficiencyTemplateDef>
+	<LifeLessons.ThingProficiencyTemplateDef>
+		<defName>RecipeGrenadeHEC2</defName>
+		<description>Time-Fuzed high explosive grenade. Includes high-explosive component (usually Pentaerythritol tetranitrate - organic compound)</description>
+		<requirements>
+			<li>MetalWorking</li>
+			<li>InorganicChemistry</li>
+			<li>OrganicChemistry</li>
+			<li>MicroelectronicsAssembly</li>
+		</requirements>
+		<unqualifiedPenalty>
+			<statModifiers>
+				<li>
+					<stat>GeneralLaborSpeed</stat>
+					<applyGlobally>True</applyGlobally>
+					<modifier>0.7</modifier>
+				</li>
+			</statModifiers>
+			<qualityCap>Normal</qualityCap>
+		</unqualifiedPenalty>
+		<hardRequirement>False</hardRequirement>
+	</LifeLessons.ThingProficiencyTemplateDef>
+	<LifeLessons.ThingProficiencyTemplateDef>
+		<defName>RecipeGrenadeHEDPC1</defName>
+		<description>High explosive dual puprose anti-tank grenade.</description>
+		<requirements>
+			<li>MetalWorking</li>
+			<li>InorganicChemistry</li>
+			<li>OrganicChemistry</li>
+		</requirements>
+		<unqualifiedPenalty>
+			<statModifiers>
+				<li>
+					<stat>GeneralLaborSpeed</stat>
+					<applyGlobally>True</applyGlobally>
+					<modifier>0.7</modifier>
+				</li>
+			</statModifiers>
+			<qualityCap>Normal</qualityCap>
+		</unqualifiedPenalty>
+		<hardRequirement>False</hardRequirement>
+	</LifeLessons.ThingProficiencyTemplateDef>
+	<LifeLessons.ThingProficiencyTemplateDef>
+		<defName>RecipeGrenadeThermC1</defName>
+		<description>Thermobaric grenade.</description>
+		<requirements>
+			<li>MetalWorking</li>
+			<li>PhysicalChemistry</li>
+			<li>OrganicChemistry</li>
+		</requirements>
+		<unqualifiedPenalty>
+			<statModifiers>
+				<li>
+					<stat>GeneralLaborSpeed</stat>
+					<applyGlobally>True</applyGlobally>
+					<modifier>0.7</modifier>
+				</li>
+			</statModifiers>
+			<qualityCap>Normal</qualityCap>
+		</unqualifiedPenalty>
+		<hardRequirement>False</hardRequirement>
+	</LifeLessons.ThingProficiencyTemplateDef>
+	<LifeLessons.ThingProficiencyTemplateDef>
+		<defName>RecipeGrenadeEMPC1</defName>
+		<description>EMP grenade.</description>
+		<requirements>
+			<li>MetalWorking</li>
+			<li>FoundationChemistry</li>
+			<li>MicroelectronicsAssembly</li>
+		</requirements>
+		<unqualifiedPenalty>
+			<statModifiers>
+				<li>
+					<stat>GeneralLaborSpeed</stat>
+					<applyGlobally>True</applyGlobally>
+					<modifier>0.7</modifier>
+				</li>
+			</statModifiers>
+			<qualityCap>Normal</qualityCap>
+		</unqualifiedPenalty>
+		<hardRequirement>False</hardRequirement>
+	</LifeLessons.ThingProficiencyTemplateDef>
+	<LifeLessons.ThingProficiencyTemplateDef>
+		<defName>RecipeGrenadeToxC1</defName>
+		<description>Toxic Grenade.</description>
+		<requirements>
+			<li>MetalWorking</li>
+			<li>FoundationChemistry</li>
+			<li>FoundationsBiology</li>
+		</requirements>
+		<unqualifiedPenalty>
+			<statModifiers>
+				<li>
+					<stat>GeneralLaborSpeed</stat>
+					<applyGlobally>True</applyGlobally>
+					<modifier>0.7</modifier>
+				</li>
+			</statModifiers>
+			<qualityCap>Normal</qualityCap>
+		</unqualifiedPenalty>
+		<hardRequirement>False</hardRequirement>
+	</LifeLessons.ThingProficiencyTemplateDef>
+	<LifeLessons.ThingProficiencyTemplateDef>
+		<defName>RecipeGrenadeSmokeC1</defName>
+		<description>Smoke Grenade.</description>
+		<requirements>
+			<li>MetalWorking</li>
 			<li>FoundationChemistry</li>
 		</requirements>
 		<unqualifiedPenalty>
@@ -19,112 +141,18 @@
 		<hardRequirement>False</hardRequirement>
 	</LifeLessons.ThingProficiencyTemplateDef>
 	<LifeLessons.ThingProficiencyTemplateDef>
-		<defName>RecipeAmmoC2</defName>
-		<description>Sabot ammo: add penetrator core (uranium)</description>
+		<defName>RecipeGrenadeFirefoamC1</defName>
+		<description>Firefoam grenade.</description>
 		<requirements>
-			<li>PhysicalChemistry</li>
-		</requirements>
-		<unqualifiedPenalty>
-			<statModifiers>
-				<li>
-					<stat>GeneralLaborSpeed</stat>
-					<applyGlobally>True</applyGlobally>
-					<modifier>0.4</modifier>
-				</li>
-			</statModifiers>
-			<qualityCap>Normal</qualityCap>
-		</unqualifiedPenalty>
-		<hardRequirement>False</hardRequirement>
-	</LifeLessons.ThingProficiencyTemplateDef>
-	<LifeLessons.ThingProficiencyTemplateDef>
-		<defName>RecipeAmmoHEC1</defName>
-		<description>HE ammo: includes high-explosive component (usually Pentaerythritol tetranitrate - organic compound)</description>
-		<requirements>
-			<li>InorganicChemistry</li>
-			<li>OrganicChemistry</li>
-		</requirements>
-		<unqualifiedPenalty>
-			<statModifiers>
-				<li>
-					<stat>GeneralLaborSpeed</stat>
-					<applyGlobally>True</applyGlobally>
-					<modifier>0.4</modifier>
-				</li>
-			</statModifiers>
-			<qualityCap>Normal</qualityCap>
-		</unqualifiedPenalty>
-		<hardRequirement>False</hardRequirement>
-	</LifeLessons.ThingProficiencyTemplateDef>
-	<LifeLessons.ThingProficiencyTemplateDef>
-		<defName>RecipeAmmoINC1</defName>
-		<description>Incendiary ammo: white phosporus, magnesium, aluminium... Inorganic chemistry</description>
-		<requirements>
-			<li>InorganicChemistry</li>
-		</requirements>
-		<unqualifiedPenalty>
-			<statModifiers>
-				<li>
-					<stat>GeneralLaborSpeed</stat>
-					<applyGlobally>True</applyGlobally>
-					<modifier>0.4</modifier>
-				</li>
-			</statModifiers>
-			<qualityCap>Normal</qualityCap>
-		</unqualifiedPenalty>
-		<hardRequirement>False</hardRequirement>
-	</LifeLessons.ThingProficiencyTemplateDef>
-	<LifeLessons.ThingProficiencyTemplateDef>
-		<defName>RecipeAmmoEMPC1</defName>
-		<description>EMP ammunition. Add microelectronic to the bullet</description>
-		<requirements>
+			<li>MetalWorking</li>
 			<li>FoundationChemistry</li>
-			<li>MicroelectronicsAssembly</li>
 		</requirements>
 		<unqualifiedPenalty>
 			<statModifiers>
 				<li>
 					<stat>GeneralLaborSpeed</stat>
 					<applyGlobally>True</applyGlobally>
-					<modifier>0.3</modifier>
-				</li>
-			</statModifiers>
-			<qualityCap>Normal</qualityCap>
-		</unqualifiedPenalty>
-		<hardRequirement>False</hardRequirement>
-	</LifeLessons.ThingProficiencyTemplateDef>
-	<LifeLessons.ThingProficiencyTemplateDef>
-		<defName>RecipeAmmoChargedC1</defName>
-		<description>Charged ammo. High-tech ammunition. Charged and Ion</description>
-		<requirements>
-			<li>Computers</li>
-			<li>HighEnergyApplications</li>
-		</requirements>
-		<unqualifiedPenalty>
-			<statModifiers>
-				<li>
-					<stat>GeneralLaborSpeed</stat>
-					<applyGlobally>True</applyGlobally>
-					<modifier>0.2</modifier>
-				</li>
-			</statModifiers>
-			<qualityCap>Normal</qualityCap>
-		</unqualifiedPenalty>
-		<hardRequirement>False</hardRequirement>
-	</LifeLessons.ThingProficiencyTemplateDef>
-	<LifeLessons.ThingProficiencyTemplateDef>
-		<defName>RecipeAmmoChargedC2</defName>
-		<description>Charged slug ammo. High-tech ammunition; huge charged particle</description>
-		<requirements>
-			<li>Computers</li>
-			<li>HighEnergyApplications</li>
-			<li>ExoticsSmithing</li>
-		</requirements>
-		<unqualifiedPenalty>
-			<statModifiers>
-				<li>
-					<stat>GeneralLaborSpeed</stat>
-					<applyGlobally>True</applyGlobally>
-					<modifier>0.2</modifier>
+					<modifier>0.7</modifier>
 				</li>
 			</statModifiers>
 			<qualityCap>Normal</qualityCap>
