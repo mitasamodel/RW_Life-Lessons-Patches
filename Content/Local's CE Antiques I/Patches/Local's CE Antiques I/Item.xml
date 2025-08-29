@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_Locals_Matchlock"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>FirearmPrimitiveC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_Locals_MatchlockRevolver"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>FirearmPrimitiveC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_Locals_Niaoqiang"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>FirearmPrimitiveC2</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_Locals_Wheellock"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>FirearmPrimitiveC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_Locals_AxePistol"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Blacksmithing</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_WeaponCreationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Poor</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_Locals_Dragonpistol"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>FirearmPrimitiveC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_Locals_Ducksfoot"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>FirearmPrimitiveC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_Locals_Flintlockpistol"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>FirearmPrimitiveC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_Locals_KnifePistol"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Blacksmithing</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_WeaponCreationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Poor</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_Locals_Matchlockpistol"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>FirearmPrimitiveC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_Locals_TripleMatchlockpistol"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>FirearmPrimitiveC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_Locals_BakerRifle"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>FirearmPrimitiveC2</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_Locals_EllisJenningsFlintlock"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>FirearmPrimitiveC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_Locals_Jezail"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>FirearmPrimitiveC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_Locals_M1777Musket"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>FirearmPrimitiveC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_Locals_AirRifle"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>FirearmPrimitiveC2</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_Locals_Blunderbuss"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>FirearmPrimitiveC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_Locals_Mortar"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>FirearmPrimitiveC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_Locals_Nockgun"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>FirearmPrimitiveC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_Locals_Firelance"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Blacksmithing</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_WeaponCreationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Poor</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_Locals_Handgonne"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Blacksmithing</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_WeaponCreationSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.6</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Poor</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_Locals_Wallgun"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>FirearmPrimitiveC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_Locals_Odzutsu"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>FirearmPrimitiveC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_Locals_WheellockWallgun"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>FirearmPrimitiveC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+</Patch>

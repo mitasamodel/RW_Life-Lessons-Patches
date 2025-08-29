@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/ThingDef[defName="CE_Apparel_TacVest"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/ThingDef[defName="CE_Apparel_Backpack"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/ThingDef[defName="CE_Apparel_KidBackpack"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/ThingDef[defName="CE_Apparel_RadioPack"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>MicroelectronicsAssembly</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Poor</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/ThingDef[defName="CE_Apparel_ExoFrame"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>PowerArmorC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/ThingDef[defName="CE_Apparel_PlateHelmet"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelMetalArmorC2</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/ThingDef[defName="CE_Apparel_GasMask"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PolymerTailoring</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Awful</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/ThingDef[defName="CE_Apparel_SimpleNightVision"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>MicroelectronicsAssembly</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Poor</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/ThingDef[defName="CE_Apparel_AdvancedNightVision"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>MicroelectronicsAssembly</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Poor</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/ThingDef[defName="CE_Apparel_MeleeShield"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Woody</stuffCategory>
+            <requirements>
+              <li>Carpentry</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Metallic</stuffCategory>
+            <requirements>
+              <li>MetalWorking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Awful</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/ThingDef[defName="CE_Apparel_BallisticShield"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>MetalWorking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Awful</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/ThingDef[defName="CE_Apparel_CompositeVest"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PolymerTailoring</li>
+          <li>MetalWorking</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Awful</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/ThingDef[defName="CE_GrenadeLauncher"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>FirearmLauncherC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/ThingDef[defName="CE_FlareGun"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>FirearmPrimitiveC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/ThingDef[defName="Pila"]|Defs/CombatExtended.AmmoDef[defName="Pila"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Carving</li>
+        </requirements>
+        <rewards>
+          <li>
+            <proficiency>PrinciplesWoodworking</proficiency>
+            <experienceType>Practical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>0.5</progressMultiplier>
+          </li>
+        </rewards>
+        <unqualifiedPenalty>
+          <statModifiers />
+          <qualityCap>Poor</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/ThingDef[defName="Gun_BinocularsRadio"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>MicroelectronicsAssembly</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Poor</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+</Patch>

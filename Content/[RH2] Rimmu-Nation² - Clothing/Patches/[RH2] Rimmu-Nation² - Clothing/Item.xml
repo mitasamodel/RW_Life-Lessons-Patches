@@ -1,0 +1,4178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_ColdWar_Bandana"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_PUBG_Bandana"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Shemagh_Bandana"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_EarDefs_PeltorOptimeII"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelMetalArmorC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_EyePros_RB3025AviatorGlasses"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelMetalArmorC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_EyePros_TerminatorGlasses"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelMetalArmorC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_EyePros_8X10BallisticGoggles"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelMetalArmorC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_EyePros_SIBallisticMFrame"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelMetalArmorC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_TrenchCoatHood_PUBG"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Beanie_Beechfield"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Beanie_Skullcap"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_BaseballCap_511Tactical"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_FieldCap_HelikonTex"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_BoonieHat_Bushmaster"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_BoonieHat_MILTEC"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_FedoraHat_Generic"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_GunslingerHat_Generic"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Beret_RUMilitary"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Balaclava_EXF"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Balaclava_511M"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Balaclava_AikuerSkull"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Balaclava_Reaper"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Balaclava_Clown"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Balaclava_Highlander"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Balaclava_CheekiBreeki"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Pants_511Stryke"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Pants_BlackhawkPursuit"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Pants_511StrykeMulticam"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Pants_HelikonPilgrim"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Pants_FjallravenKeb"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Pants_BearGryllsSurvivor"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Pants_GORKA3Pants"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Jeans_Generic"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Pants_ACUUCP"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Pants_BDUDMARPAT"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Pants_CombatsDDPM"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Pants_SuitBrioni"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Gasmask_P1944WWI"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PhysicalChemistry</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Gasmask_S6NBC"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PhysicalChemistry</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Gasmask_S10NBC"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PhysicalChemistry</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Gasmask_GP5Soviet"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PhysicalChemistry</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Gasmask_M1Yugoslavian"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PhysicalChemistry</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Gasmask_MSAMillenium"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>PhysicalChemistry</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Shemagh_511BlazeWrap"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RHApparel_PUTrenchCoat_PUBG"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RHApparel_TrenchCoat_Vigilante"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RHApparel_TrenchCoat_PUBG"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_FieldParka_Generic"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_VintageParka_Generic"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_VestJacket_Generic"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Overcoat_Generic"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_TrenchCoat_Detective"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_SuitJacket_Generic"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_BikerJacket_Generic"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_GunslingerJacket_Generic"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_CombatJacket_Generic"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_SuedeJacket_Generic"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_TacticalJacket_TACVASEN"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Hoodie_FruitOfTheLoom"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_NorweiganShirt_Pullover"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_PoloShirt_511Tactical"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_UBACShirt_CryeG2Uniform"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_UBACShirt_511RapidAssault"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Jacket_GORKA3Jacket"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Shirt_BlackhawkPursuit"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_FlightSuit_Brandit"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_TankTop_Generic"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_ButtonShirt_Generic"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_HawaiianShirt_Generic"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_DesignerShirt_Boss"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_ACU_UCP"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_BDU_DMARPAT"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_UBACShirt_DDPM"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RHApparel_M56Webbing_Vietnam"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>MetalWorking</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RHApparel_ALICEWebbing_ColdWar"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>MetalWorking</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RHApparel_RRV_ChestRig"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RHApparel_USMC_ChestRig"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>MetalWorking</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RHApparel_CondorRecon_ChestRig"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>MetalWorking</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RHApparel_CryeAVSTan_ChestRig"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>MetalWorking</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RHApparel_MilTec_ChestRig"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>MetalWorking</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RHApparel_WarriorFalcon_ChestRig"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>MetalWorking</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RHApparel_MaxpeditionBattleBelt_Olive"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>MetalWorking</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RHApparel_CondorBattleBelt_Tan"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>MetalWorking</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RHApparel_VTACBattleBelt_Tan"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>MetalWorking</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RHApparel_SuperBelt_Tan"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>MetalWorking</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RHApparel_Type56Webbing_ColdWar"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>MetalWorking</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RHApparel_Type63Webbing_ColdWar"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>MetalWorking</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RHApparel_M23_ChestRig"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>MetalWorking</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RHApparel_KulaMongoose_ChestRig"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>MetalWorking</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RHApparel_Arktis_TacticalVest"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>MetalWorking</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RHApparel_TexShoemakerPoliceBelt_Python"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>MetalWorking</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RHApparel_SafarilandPoliceBelt_Beretta"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>MetalWorking</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RHApparel_SafarilandPoliceBelt_Glock"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>MetalWorking</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <qualityCap>Legendary</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_FirstSpearAACV2_Multicam"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_511TacTec_Tan"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_DDTGhost_ODGreen"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_WarriorDCS_ODGreen"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_ENVOVestSystem_Grey"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_FlyyeFCPC_Multicam"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_OspreyMk3_DDPM"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_OTV_Tan"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_IOTV_UCP"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_MTV_Tan"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_VestguardCT101_Navy"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_VestguardOT103_Navy"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_VestguardQRA_Black"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_VestguardQRX_Black"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_PinnacleArmor_DragonSkin"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_PASGTVest_Olive"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_ViperLazerSOPC_Tan"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_PointBlankASPC_Black"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_PointBlankFASTC_CoyoteBrown"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_LBTMPC_Tan"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_LBTG3_Multicam"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_AR500Veritas_Brown"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_MBCFantom_Black"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_PACALVC_Tan"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_BristolBodyArmor_Olive"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Defender2_Tan"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_MedEngHelmet_EOD9A"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+          <li>ExoticsWelding</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_MedEng_EOD9Suit"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+          <li>ExoticsWelding</li>
+          <li>ExoticsSmithing</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_GalacTacFAST_Tan"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+          <li>ExoticsWelding</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_GalacTecBodyArmour_Tan"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_M1Helmet_Vietnam"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Blacksmithing</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_ProTecPrime_PizzaTime"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_EXFILBallisticHelmet_Tan"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+          <li>ExoticsWelding</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_3MF70HighCut_Tan"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+          <li>ExoticsWelding</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_FLUXBallisticHelmet_Raid"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+          <li>ExoticsWelding</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_UaRmsTORD_Tan"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+          <li>ExoticsWelding</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_VestGuardFAST_Black"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+          <li>ExoticsWelding</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_OpsCoreFAST_Tan"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+          <li>ExoticsWelding</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_OpsCoreFAST_SF"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+          <li>ExoticsWelding</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_OpsCoreFASTBUMP_Multicam"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+          <li>ExoticsWelding</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_OpsCoreFASTCarbon_Grey"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+          <li>ExoticsWelding</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_MICH2000_CAG"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+          <li>ExoticsWelding</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_MICH2000_AmericanSniper"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+          <li>ExoticsWelding</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Mk6BallisticHelmet_DDPM"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Mk6BallisticHelmet_Olive"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Mk6ABallisticHelmet_Black"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Mk7BallisticHelmet_Tan"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+          <li>ExoticsWelding</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_VestGuardPASGT_Black"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_VestGuardPASGT_PRESS"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_PASGT_Tan"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_PASGT_ENVO"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_LWH_DMARPAT"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_ACH_UCP"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+          <li>ExoticsWelding</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_LZSH2DTM_Olive"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+          <li>ExoticsWelding</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_STSh81_Helmet"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_6B48_Helmet"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Helmet_Juggernaut"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+          <li>ExoticsWelding</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_MedEng_JuggernautSuit"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+          <li>ExoticsWelding</li>
+          <li>ExoticsSmithing</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_SecProHelmet_Riot"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+          <li>ExoticsWelding</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_RiotSuit_SecPro"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <requirements>
+          <li>Armorsmithing</li>
+          <li>Machining</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Fabric</stuffCategory>
+            <requirements>
+              <li>Tailoring</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Leathery</stuffCategory>
+            <requirements>
+              <li>Leatherworking</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+            <li MayRequireAnyOf="vanillaexpanded.skills,vanillaexpanded.skills_steam">
+              <stat>VSE_TailoringSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_MOLLE2UCP"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_BerghausVulcanIV"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_AzimutSSKangaroo"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_NorthFaceTerra65L"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_LBT0101JJ"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_StudentBackpack"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_Naotak"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_FANDARESling"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_Level1PUBG"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_Motherlode"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_Gootium"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_OutdoorMaster"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_TactixHalfday"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_RUSH12BP"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_AssaultPack"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_NitecoreBP20Pack"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_WarriorHelmetCarrier"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_RUSH24BP"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_FASTPack"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_KeltyRaven2500Pack"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_WarriorPegasus"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_BearGryllsBearpac"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_WENGERSyngery"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_MountainWarehouseMerlin"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_AMAPIII"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_Tomahawk"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_HelloKitty"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_TarpBackpack"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_AnCHero"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_HelikonBailOutBag"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="RNApparel_Backpack_Wasing"]</xpath>
+    <value>
+      <li Class="LifeLessons.BillProficiencyExtension">
+        <templateDef>ApparelTailoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+</Patch>

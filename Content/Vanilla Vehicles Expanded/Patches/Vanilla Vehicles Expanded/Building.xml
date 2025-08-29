@@ -1,0 +1,655 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_RefuelingPump"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <requirements>
+          <li>MetalWorking</li>
+          <li>Welding</li>
+          <li>MechanicalAssembly</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_GarageBench"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <requirements>
+          <li>MetalWorking</li>
+          <li>Welding</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_TankTrap"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Woody</stuffCategory>
+            <requirements>
+              <li>Carpentry</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Metallic</stuffCategory>
+            <requirements>
+              <li>Welding</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_GarageDoor"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Woody</stuffCategory>
+            <requirements>
+              <li>Carpentry</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Metallic</stuffCategory>
+            <requirements>
+              <li>MetalWorking</li>
+              <li>Welding</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Stony</stuffCategory>
+            <requirements>
+              <li>Masonry</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_GarageDoorOpened"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Woody</stuffCategory>
+            <requirements>
+              <li>Carpentry</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Metallic</stuffCategory>
+            <requirements>
+              <li>MetalWorking</li>
+              <li>Welding</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Stony</stuffCategory>
+            <requirements>
+              <li>Masonry</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_GarageDoorLarge"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Woody</stuffCategory>
+            <requirements>
+              <li>Carpentry</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Metallic</stuffCategory>
+            <requirements>
+              <li>MetalWorking</li>
+              <li>Welding</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Stony</stuffCategory>
+            <requirements>
+              <li>Masonry</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_GarageDoorLargeOpened"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Woody</stuffCategory>
+            <requirements>
+              <li>Carpentry</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Metallic</stuffCategory>
+            <requirements>
+              <li>MetalWorking</li>
+              <li>Welding</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Stony</stuffCategory>
+            <requirements>
+              <li>Masonry</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_GarageAutoDoor"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <requirements>
+          <li>ElectricalAssembly</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Woody</stuffCategory>
+            <requirements>
+              <li>Carpentry</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Metallic</stuffCategory>
+            <requirements>
+              <li>MetalWorking</li>
+              <li>Welding</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Stony</stuffCategory>
+            <requirements>
+              <li>Masonry</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_GarageAutoDoorOpened"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <requirements>
+          <li>ElectricalAssembly</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Woody</stuffCategory>
+            <requirements>
+              <li>Carpentry</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Metallic</stuffCategory>
+            <requirements>
+              <li>MetalWorking</li>
+              <li>Welding</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Stony</stuffCategory>
+            <requirements>
+              <li>Masonry</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_GarageAutoDoorLarge"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <requirements>
+          <li>ElectricalAssembly</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Woody</stuffCategory>
+            <requirements>
+              <li>Carpentry</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Metallic</stuffCategory>
+            <requirements>
+              <li>MetalWorking</li>
+              <li>Welding</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Stony</stuffCategory>
+            <requirements>
+              <li>Masonry</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_GarageAutoDoorLargeOpened"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <requirements>
+          <li>ElectricalAssembly</li>
+        </requirements>
+        <stuffRequirements>
+          <li>
+            <stuffCategory>Woody</stuffCategory>
+            <requirements>
+              <li>Carpentry</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Metallic</stuffCategory>
+            <requirements>
+              <li>MetalWorking</li>
+              <li>Welding</li>
+            </requirements>
+          </li>
+          <li>
+            <stuffCategory>Stony</stuffCategory>
+            <requirements>
+              <li>Masonry</li>
+            </requirements>
+          </li>
+        </stuffRequirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_BangBus_Blueprint"]|Defs/Vehicles.VehicleBuildDef[defName="VVE_BangBus_Blueprint"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <templateDef>VehicleC2</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_Bunsen_Blueprint"]|Defs/Vehicles.VehicleBuildDef[defName="VVE_Bunsen_Blueprint"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <templateDef>VehicleArmoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_Dinghy_Blueprint"]|Defs/Vehicles.VehicleBuildDef[defName="VVE_Dinghy_Blueprint"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <templateDef>VehicleC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_Dirtbike_Blueprint"]|Defs/Vehicles.VehicleBuildDef[defName="VVE_Dirtbike_Blueprint"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <templateDef>VehicleC2</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_Frog_Blueprint"]|Defs/Vehicles.VehicleBuildDef[defName="VVE_Frog_Blueprint"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <requirements>
+          <li>Welding</li>
+          <li>MetalWorking</li>
+          <li>AirframeEngineering</li>
+        </requirements>
+        <rewards>
+          <li>
+            <proficiency>MechanicalEngineering</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+        </rewards>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_Highwayman_Blueprint"]|Defs/Vehicles.VehicleBuildDef[defName="VVE_Highwayman_Blueprint"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <templateDef>VehicleC2</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_Mule_Blueprint"]|Defs/Vehicles.VehicleBuildDef[defName="VVE_Mule_Blueprint"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <templateDef>VehicleC2</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_Prowler_Blueprint"]|Defs/Vehicles.VehicleBuildDef[defName="VVE_Prowler_Blueprint"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <templateDef>VehicleC2</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_Roadkill_Blueprint"]|Defs/Vehicles.VehicleBuildDef[defName="VVE_Roadkill_Blueprint"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <templateDef>VehicleArmoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_Scytheman_Blueprint"]|Defs/Vehicles.VehicleBuildDef[defName="VVE_Scytheman_Blueprint"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <templateDef>VehicleC2</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_Toad_Blueprint"]|Defs/Vehicles.VehicleBuildDef[defName="VVE_Toad_Blueprint"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <requirements>
+          <li>AirframeEngineering</li>
+          <li>MetalWorking</li>
+          <li>Welding</li>
+        </requirements>
+        <rewards>
+          <li>
+            <proficiency>MechanicalEngineering</proficiency>
+            <experienceType>PracticalHalfTheoretical</experienceType>
+            <progressGain>0</progressGain>
+            <progressMultiplier>1</progressMultiplier>
+          </li>
+        </rewards>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>GeneralLaborSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.3</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_Traveller_Blueprint"]|Defs/Vehicles.VehicleBuildDef[defName="VVE_Traveller_Blueprint"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <templateDef>VehicleC2</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_Bulldog_Blueprint"]|Defs/Vehicles.VehicleBuildDef[defName="VVE_Bulldog_Blueprint"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <templateDef>VehicleArmoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_Charley_Blueprint"]|Defs/Vehicles.VehicleBuildDef[defName="VVE_Charley_Blueprint"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <templateDef>VehicleC2</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_Mosquito_Blueprint"]|Defs/Vehicles.VehicleBuildDef[defName="VVE_Mosquito_Blueprint"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <templateDef>VehicleAirC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_Roadrunner_Blueprint"]|Defs/Vehicles.VehicleBuildDef[defName="VVE_Roadrunner_Blueprint"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <templateDef>VehicleC2</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_Smuggler_Blueprint"]|Defs/Vehicles.VehicleBuildDef[defName="VVE_Smuggler_Blueprint"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <templateDef>VehicleAirC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_Snatcher_Blueprint"]|Defs/Vehicles.VehicleBuildDef[defName="VVE_Snatcher_Blueprint"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <templateDef>VehicleC2</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_Tango_Blueprint"]|Defs/Vehicles.VehicleBuildDef[defName="VVE_Tango_Blueprint"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <templateDef>VehicleArmoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_Trawler_Blueprint"]|Defs/Vehicles.VehicleBuildDef[defName="VVE_Trawler_Blueprint"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <templateDef>VehicleC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_Wagon_Blueprint"]|Defs/Vehicles.VehicleBuildDef[defName="VVE_Wagon_Blueprint"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <templateDef>VehicleC2</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_Warbird_Blueprint"]|Defs/Vehicles.VehicleBuildDef[defName="VVE_Warbird_Blueprint"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <templateDef>VehicleAirC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="VVE_Wisent_Blueprint"]|Defs/Vehicles.VehicleBuildDef[defName="VVE_Wisent_Blueprint"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <templateDef>VehicleArmoredC1</templateDef>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+</Patch>
