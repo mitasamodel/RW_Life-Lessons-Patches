@@ -89,15 +89,14 @@
     <Compile Include="SettingsWindow.cs" />
     <Compile Include="TabContent_CEAmmoMain.cs" />
     <Compile Include="TabContent_CEAmmoTemplates.cs" />
+    <Compile Include="Utils\FloatMenuPreserveOrder.cs" />
+    <Compile Include="Utils\Listing_StandardExtensions.cs" />
+    <Compile Include="Utils\RectExtensions.cs" />
+    <Compile Include="Utils\Utils.cs" />
+    <Compile Include="Utils\Utils_GUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\RW_Utils\RW_JustUtils.csproj">
-      <Project>{7bd1ffb2-df18-44e5-8563-5ce0d57755a9}</Project>
-      <Name>RW_JustUtils</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
