@@ -56,7 +56,13 @@ namespace LLPatches
 			Settings.RestoreCEAmmoTemplates();
 
 			// Normal "fields" will be automatically written.
-			LongEventHandler.ExecuteWhenFinished(WriteSettings);
+			LongEventHandler.ExecuteWhenFinished(() =>
+			{
+				WriteSettings();
+#if DEBUG
+				Verse.Log.Message($"[Life Lessons: Patches] Settings file written after long events finished.");
+#endif
+			});
 			//WriteSettings();
 			//Settings.Write();
 			Verse.Log.Message($"[Life Lessons: Patches] New settings initialized.");
