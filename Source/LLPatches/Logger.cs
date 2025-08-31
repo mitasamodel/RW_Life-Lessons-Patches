@@ -18,7 +18,7 @@ namespace LLPatches
 			if (!_init)
 			{
 				_init = true;
-				if (LLPatchesMod.settings?.patchCEAmmo_Logging == true || LLPatchesMod.settings?.patchCEAmmo_LogUnpatched == true)
+				if (LLPatchesMod.Settings?.patchCEAmmo_Logging == true || LLPatchesMod.Settings?.patchCEAmmo_LogUnpatched == true)
 					File.WriteAllText(logFile, "[LLPatch] Debug start\n");    //create/rewrite file
 #if DEBUG
 				File.WriteAllText(logFile, "[LLPatch] Debug start\n");    //force in debug
@@ -40,7 +40,7 @@ namespace LLPatches
 			File.AppendAllText(logFile, str + "\n");
 #else
 			if (!_init) Init();
-			if (LLPatchesMod.settings.patchCEAmmo_Logging)
+			if (LLPatchesMod.Settings.patchCEAmmo_Logging)
 				File.AppendAllText(logFile, str + "\n");
 #endif
 		}

@@ -111,10 +111,6 @@ namespace LLPatches
 
 			if (Scribe.mode == LoadSaveMode.PostLoadInit)
 			{
-				// After everything has been loaded, let's check if the list is actually initialized.
-				// Scribe will re-write the list, so initializing it before will not help. Scribe will re-write it with 'null'.
-				CEAmmoTemplates ??= new List<CEAmmoTemplate>();
-
 				// Legacy check.
 				if (settingsVersion != currentVersion)
 				{
@@ -138,6 +134,7 @@ namespace LLPatches
 #if DEBUG
 			Logger.Log("Migrate 0->1");
 #endif
+			Verse.Log.Message($"[Life Lessons: Patches] Migrate settings: 0->1");
 			foreach (var kv in _legacyDict)
 			{
 				string suffix = kv.Key;

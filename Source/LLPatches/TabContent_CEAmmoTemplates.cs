@@ -104,7 +104,7 @@ namespace LLPatches
 			// Restore to defaults button.
 			if (Utils_GUI.ResetButton(inRect, "Restore defaults"))
 			{
-				LLPatchesMod.settings.RestoreCEAmmoTemplates();
+				LLPatchesMod.Settings.RestoreCEAmmoTemplates();
 				UpdateFilter();
 			}
 
@@ -113,7 +113,7 @@ namespace LLPatches
 			// Delete template.
 			if (_toDelete != null)
 			{
-				LLPatchesMod.settings.CEAmmoTemplates.Remove(_toDelete);
+				LLPatchesMod.Settings.CEAmmoTemplates.Remove(_toDelete);
 				_toDelete = null;
 				UpdateFilter();
 			}
@@ -121,7 +121,7 @@ namespace LLPatches
 			// Add an item.
 			if (_toAdd)
 			{
-				LLPatchesMod.settings.CEAmmoTemplates.Add(new CEAmmoTemplate("", ""));
+				LLPatchesMod.Settings.CEAmmoTemplates.Add(new CEAmmoTemplate("", ""));
 				_toAdd = false;
 				UpdateFilter();
 			}
@@ -319,8 +319,15 @@ namespace LLPatches
 			// Small helper.
 			static bool Matches(string s) => !string.IsNullOrEmpty(_search) && (s?.ContainsIgnoreCase(_search) ?? false);
 
+			if (LLPatchesMod.Settings.CEAmmoTemplates == null)
+			{
+				Logger.Log_Error($"[TabContent_CEAmmoTemplates] Templates list is null.");
+				Verse.Log.Message($"[Life Lessons: Patches] Please report it to mod author.");
+				return;
+			}
+
 			// Filter first.
-			var filtered = LLPatchesMod.settings.CEAmmoTemplates
+			var filtered = LLPatchesMod.Settings.CEAmmoTemplates
 				.Where(t => string.IsNullOrEmpty(_search) ||
 					(string.IsNullOrEmpty(t.Prefix) && string.IsNullOrEmpty(t.Suffix)) ||
 					Matches(t.Prefix) ||
@@ -332,7 +339,7 @@ namespace LLPatches
 			_filteredList = filtered.OrderTemplates().ToList();
 		}
 
-		public bool Enabled() => ModsConfig.IsActive("CETeam.CombatExtended") && LLPatchesMod.settings.patchCEAmmo_Manual;
+		public bool Enabled() => ModsConfig.IsActive("CETeam.CombatExtended") && LLPatchesMod.Settings.patchCEAmmo_Manual;
 		public string GetLabel() => "CE Ammo Templates";
 	}
 }

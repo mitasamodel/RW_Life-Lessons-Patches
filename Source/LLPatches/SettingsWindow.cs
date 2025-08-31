@@ -14,7 +14,7 @@ namespace LLPatches
 {
 	public class LLPatchesMod : Mod, ITabHost
 	{
-		public static LLPatchesSettings settings;
+		public static LLPatchesSettings Settings;
 		internal static bool forceRewriteSettings = false;
 
 		public enum SettingsTab { Nothing, CEAmmoMain, CEAmmoTemplates, dummy1, dummy2 };       // Types of tabs to distinguish.
@@ -27,7 +27,11 @@ namespace LLPatches
 		public LLPatchesMod(ModContentPack content) : base(content)
 		{
 			// Load settings.
-			settings = GetSettings<LLPatchesSettings>();
+			Settings = GetSettings<LLPatchesSettings>();
+
+			// First time loaded. Initialize all.
+			if (Settings.CEAmmoTemplates == null)
+				InitTheFirstTime();
 
 			// Initialize instances for tabs.
 			_tabInstances = new Dictionary<SettingsTab, ITabView>()
@@ -38,6 +42,24 @@ namespace LLPatches
 				//{ SettingsTab.dummy2, new dummyTab2(this) },
 			};
 			ResetTabs();
+		}
+
+		private void InitTheFirstTime()
+		{
+			// Set version.
+			Settings.settingsVersion = LLPatchesSettings.currentVersion;
+
+			// Init all variables.
+			// Settings.ResetToDefaults(); // No need, they auto-initialized.
+
+			// First time the list is null.
+			Settings.RestoreCEAmmoTemplates();
+
+			// Normal "fields" will be automatically written.
+			LongEventHandler.ExecuteWhenFinished(WriteSettings);
+			//WriteSettings();
+			//Settings.Write();
+			Verse.Log.Message($"[Life Lessons: Patches] New settings initialized.");
 		}
 
 		public override string SettingsCategory() => "Life Lessons: Patches";

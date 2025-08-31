@@ -29,15 +29,15 @@ namespace LLPatches
 			//LongEventHandler.ExecuteWhenFinished(() => LoadedModManager.GetMod<LLPatchesMod>()?.WriteSettings());
 
 			//CE Ammos have their separated recipes instead of auto-generated for items
-			if (LLPatchesMod.settings.patchUnpatchedCEAmmo)
+			if (LLPatchesMod.Settings.patchUnpatchedCEAmmo)
 				ProcessCEAmmoRecipes();
 		}
 
 		public static void ProcessCEAmmoRecipes()
 		{
-			if (LLPatchesMod.settings.CEAmmoTemplates == null)
+			if (LLPatchesMod.Settings.CEAmmoTemplates == null)
 			{
-				Log_Error($"[Life Lessons: Patches] Settings are null: {LLPatchesMod.settings.CEAmmoTemplates == null}");
+				Log_Error($"Settings are null: {LLPatchesMod.Settings.CEAmmoTemplates == null}");
 				Verse.Log.Message("[Life Lessons: Patches] Please report it to mod author");
 				return;
 			}
@@ -49,7 +49,7 @@ namespace LLPatches
 			List<string> wrongTemplates = new List<string>();
 
 			// Templates.
-			var templates = LLPatchesMod.settings.CEAmmoTemplates
+			var templates = LLPatchesMod.Settings.CEAmmoTemplates
 				.Where(t => t.IsActive)
 				.OrderTemplates()
 				.ToList();
@@ -72,18 +72,18 @@ namespace LLPatches
 					continue;
 				}
 
-				if (LLPatchesMod.settings.patchCEAmmo_Logging)
+				if (LLPatchesMod.Settings.patchCEAmmo_Logging)
 					Log($"Recipe: {recipe.defName}. Ammo: {recipe.products[0].thingDef?.defName}");
 
 				// Recipe already has profeciency defined.
 				if (ExtensionExist(recipe))
 				{
 					// Force re-patch.
-					if (LLPatchesMod.settings.patchCEAmmo_ForceRemoveExisting)
+					if (LLPatchesMod.Settings.patchCEAmmo_ForceRemoveExisting)
 						RemoveExistingExtension(recipe);
 					else
 					{
-						if (LLPatchesMod.settings.patchCEAmmo_Logging)
+						if (LLPatchesMod.Settings.patchCEAmmo_Logging)
 							Log($"\tBillProficiencyExtension already exists. Skipping");
 						continue;
 					}
@@ -99,7 +99,7 @@ namespace LLPatches
 							recipe.defName.EndsWith(template.Suffix, StringComparison.OrdinalIgnoreCase))
 						{
 							templateName = template.Template;
-							if (LLPatchesMod.settings.patchCEAmmo_Logging)
+							if (LLPatchesMod.Settings.patchCEAmmo_Logging)
 								Log($"\t[Template] {template.Prefix}:::{template.Suffix} Name: {templateName}");
 							break;
 						}
@@ -111,7 +111,7 @@ namespace LLPatches
 						if (recipe.defName.StartsWith(template.Prefix, StringComparison.OrdinalIgnoreCase))
 						{
 							templateName = template.Template;
-							if (LLPatchesMod.settings.patchCEAmmo_Logging)
+							if (LLPatchesMod.Settings.patchCEAmmo_Logging)
 								Log($"\t[Template] {template.Prefix}:::{template.Suffix} Name: {templateName}");
 							break;
 						}
@@ -123,7 +123,7 @@ namespace LLPatches
 						if (recipe.defName.EndsWith(template.Suffix, StringComparison.OrdinalIgnoreCase))
 						{
 							templateName = template.Template;
-							if (LLPatchesMod.settings.patchCEAmmo_Logging)
+							if (LLPatchesMod.Settings.patchCEAmmo_Logging)
 								Log($"\t[Template] {template.Prefix}:::{template.Suffix} Name: {templateName}");
 							break;
 						}
@@ -143,7 +143,7 @@ namespace LLPatches
 			}
 
 			// Output the wrong templates list.
-			if (wrongTemplates.Count > 0 && (LLPatchesMod.settings.patchCEAmmo_Logging || LLPatchesMod.settings.patchCEAmmo_LogWrongTemplates))
+			if (wrongTemplates.Count > 0 && (LLPatchesMod.Settings.patchCEAmmo_Logging || LLPatchesMod.Settings.patchCEAmmo_LogWrongTemplates))
 			{
 				Log("Templates without Defs:");
 				foreach (var name in wrongTemplates)
@@ -151,7 +151,7 @@ namespace LLPatches
 			}
 
 			// Output summary if any recipes were unmatched.
-			if (noTemplateRecipes.Count > 0 && (LLPatchesMod.settings.patchCEAmmo_Logging || LLPatchesMod.settings.patchCEAmmo_LogUnpatched))
+			if (noTemplateRecipes.Count > 0 && (LLPatchesMod.Settings.patchCEAmmo_Logging || LLPatchesMod.Settings.patchCEAmmo_LogUnpatched))
 			{
 				Log("Recipes with no matching template:");
 				foreach (string recipeName in noTemplateRecipes)
@@ -170,7 +170,7 @@ namespace LLPatches
 			var extension = recipe.modExtensions?.OfType<BillProficiencyExtension>().FirstOrDefault();
 			if (extension != null)
 			{
-				if (LLPatchesMod.settings.patchCEAmmo_Logging)
+				if (LLPatchesMod.Settings.patchCEAmmo_Logging)
 					Log($"\tBillProficiencyExtension already exists. Will remove");
 				recipe.modExtensions.Remove(extension);
 			}
