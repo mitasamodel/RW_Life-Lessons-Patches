@@ -82,15 +82,6 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/ThingDef[defName="Gun_Locals_MartiniHenry"]</xpath>
-    <value>
-      <li Class="LifeLessons.BillProficiencyExtension">
-        <templateDef>FirearmC1</templateDef>
-        <hardRequirement>False</hardRequirement>
-      </li>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationAddModExtension">
     <xpath>Defs/ThingDef[defName="Gun_Locals_SharpsRifle"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
@@ -100,25 +91,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/ThingDef[defName="Gun_Locals_Trapdoor"]</xpath>
-    <value>
-      <li Class="LifeLessons.BillProficiencyExtension">
-        <templateDef>FirearmC1</templateDef>
-        <hardRequirement>False</hardRequirement>
-      </li>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationAddModExtension">
     <xpath>Defs/ThingDef[defName="Gun_Locals_1860Henry"]</xpath>
-    <value>
-      <li Class="LifeLessons.BillProficiencyExtension">
-        <templateDef>FirearmC1</templateDef>
-        <hardRequirement>False</hardRequirement>
-      </li>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/ThingDef[defName="Gun_Locals_LeverAction"]</xpath>
     <value>
       <li Class="LifeLessons.BillProficiencyExtension">
         <templateDef>FirearmC1</templateDef>
