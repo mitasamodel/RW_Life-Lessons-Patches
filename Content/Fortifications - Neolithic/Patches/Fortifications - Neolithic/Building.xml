@@ -15,7 +15,7 @@
               <modifier>0.5</modifier>
             </li>
           </statModifiers>
-          <qualityCap>Legendary</qualityCap>
+          <qualityCap>Normal</qualityCap>
         </unqualifiedPenalty>
         <hardRequirement>False</hardRequirement>
       </li>
@@ -45,7 +45,7 @@
               <modifier>0.5</modifier>
             </li>
           </statModifiers>
-          <qualityCap>Legendary</qualityCap>
+          <qualityCap>Normal</qualityCap>
         </unqualifiedPenalty>
         <hardRequirement>False</hardRequirement>
       </li>
@@ -66,7 +66,7 @@
               <modifier>0.5</modifier>
             </li>
           </statModifiers>
-          <qualityCap>Legendary</qualityCap>
+          <qualityCap>Normal</qualityCap>
         </unqualifiedPenalty>
         <hardRequirement>False</hardRequirement>
       </li>
@@ -87,7 +87,7 @@
               <modifier>0.5</modifier>
             </li>
           </statModifiers>
-          <qualityCap>Legendary</qualityCap>
+          <qualityCap>Normal</qualityCap>
         </unqualifiedPenalty>
         <hardRequirement>False</hardRequirement>
       </li>
