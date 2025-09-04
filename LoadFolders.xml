@@ -6,6 +6,7 @@
 		<li IfModActive="adaptive.primitivestorage,adaptive.primitivestorage_steam">Content/Adaptive Primitive Storage</li>
 		<li IfModActive="adaptive.simplestorage,adaptive.simplestorage_steam">Content/Adaptive Simple Storage</li>
 		<li IfModActive="adaptive.storage.neolithic,adaptive.storage.neolithic_steam">Content/Adaptive Storage Neolithic Module</li>
+		<li IfModActive="aoba.fortress.neolithic,aoba.fortress.neolithic_steam">Content/Fortifications - Neolithic</li>
 		<li IfModActive="asf.deepstorage,asf.deepstorage_steam">Content/LWM's Adaptive Deep Storage</li>
 		<li IfModActive="ceteam.combatextended,ceteam.combatextended_steam">Content/Combat Extended</li>
 		<li IfModActive="cp.rimmunation.2.clothing,cp.rimmunation.2.clothing_steam">Content/[RH2] Rimmu-Nation² - Clothing</li>
