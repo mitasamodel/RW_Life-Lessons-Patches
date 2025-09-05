@@ -31,5 +31,6 @@
 		<li IfModActive="rikiki.miningco.mininghelmet,rikiki.miningco.mininghelmet_steam">Content/MiningCo. MiningHelmet</li>
 		<li IfModActive="sbz.neatstoragefridge,sbz.neatstoragefridge_steam">Content/[sbz] Fridge</li>
 		<li IfModActive="xmb.ancienturbanruins.mo,xmb.ancienturbanruins.mo_steam">Content/Ancient urban ruins</li>
+		<li IfModActive="hol.neolstuff,hol.neolstuff_steam">Content/Neolithic Desk and Blackboard</li>
 	</v1.6>
 </loadFolders>
