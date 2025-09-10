@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/ThingDef[defName="WFFT_FishTrap"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <requirements>
+          <li>Carving</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>ConstructionSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="LifeLessons.PatchOperationAddProficiencyExtension">
+    <xpath>Defs/ThingDef[defName="WFFT_FishNet"]</xpath>
+    <value>
+      <li Class="LifeLessons.BuildingProficiencyExtension">
+        <requirements>
+          <li>Threadcraft</li>
+          <li>Carving</li>
+        </requirements>
+        <unqualifiedPenalty>
+          <statModifiers>
+            <li>
+              <stat>ConstructionSpeed</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.5</modifier>
+            </li>
+            <li>
+              <stat>ConstructSuccessChance</stat>
+              <applyGlobally>True</applyGlobally>
+              <modifier>0.8</modifier>
+            </li>
+          </statModifiers>
+          <qualityCap>Normal</qualityCap>
+        </unqualifiedPenalty>
+        <hardRequirement>False</hardRequirement>
+      </li>
+    </value>
+  </Operation>
+</Patch>

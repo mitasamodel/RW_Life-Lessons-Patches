@@ -11,6 +11,7 @@
 		<li IfModActive="ceteam.combatextended,ceteam.combatextended_steam">Content/Combat Extended</li>
 		<li IfModActive="cp.rimmunation.2.clothing,cp.rimmunation.2.clothing_steam">Content/[RH2] Rimmu-Nation² - Clothing</li>
 		<li IfModActive="cp.rimmunation.2.weapons,cp.rimmunation.2.weapons_steam">Content/[RH2] Rimmu-Nation² - Weapons</li>
+		<li IfModActive="hol.neolstuff,hol.neolstuff_steam">Content/Neolithic Desk and Blackboard</li>
 		<li IfModActive="keshash.grenadevariety,keshash.grenadevariety_steam">Content/Grenade Variety for Combat Extended</li>
 		<li IfModActive="killerbot.gtekv2arsenal,killerbot.gtekv2arsenal_steam">Content/GTek's Arsenal 2.0 - Ultimate Survival and Colony Defense</li>
 		<li IfModActive="klvlt.asf.medicinecrate,klvlt.asf.medicinecrate_steam">Content/Medicine Crate (with Adaptive Storage Framework)</li>
@@ -30,7 +31,7 @@
 		<li IfModActive="reel.expanded.storage,reel.expanded.storage_steam">Content/Reel's Expanded Storage</li>
 		<li IfModActive="rikiki.miningco.mininghelmet,rikiki.miningco.mininghelmet_steam">Content/MiningCo. MiningHelmet</li>
 		<li IfModActive="sbz.neatstoragefridge,sbz.neatstoragefridge_steam">Content/[sbz] Fridge</li>
+		<li IfModActive="warlocksforge.fishtraps,warlocksforge.fishtraps_steam">Content/Fish Traps</li>
 		<li IfModActive="xmb.ancienturbanruins.mo,xmb.ancienturbanruins.mo_steam">Content/Ancient urban ruins</li>
-		<li IfModActive="hol.neolstuff,hol.neolstuff_steam">Content/Neolithic Desk and Blackboard</li>
 	</v1.6>
 </loadFolders>
